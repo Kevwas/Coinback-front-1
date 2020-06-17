@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://www.pagolinea.com/favicon.png" />
+    <link rel="icon" href="assets/logos/coinback.ico" />
     <link rel="stylesheet" href="styles/main.css" />
     <link
       rel="stylesheet"
@@ -41,73 +41,87 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
     <script src="js/brands.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <title>Coinback</title>
   </head>
   <body>
-    <header class="align-items-center d-flex">
+    <header>
       <div class="row p-3 w-100">
-        <div class="col-6 col-md-3">
-          <img src="assets/logos/coinback-logo.png" class="w-25 logo" alt="" />
+        <div class="col-3 col-md-3">
+          <img src="assets/logos/coinback-logo.png" class="w-100 logo" alt="" />
         </div>
-        <div class="col-12 col-md-6 hidden-md-down justify-content-center align-items-center">
-          <a href="www.pagolinea.com" class="mr-4 ml-4">Iniciar sesion</a>
-          <a href="www.coinback.com" class="mr-4 ml-4">Registrarse</a>
-          <a href="www.facebook.com" class="mr-4 ml-4">Inicio</a>
+        <div class="col-6 hidden-md-up">
+          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
         </div>
-        <div class="col-6 col-md-3 d-flex align-items-center justify-content-end">
-          <button style="background-color: transparent; border: none;">
-            MENu
-          </button>
+        <div
+          class="col-12 col-md-6 hidden-md-down justify-content-center align-items-center"
+        >
+          <a href="www.pagolinea.com" class="mr-4 ml-4 menu-item"
+            >Iniciar sesion</a
+          >
+          <a href="www.coinback.com" class="mr-4 ml-4 menu-item">Registrarse</a>
+          <a href="www.facebook.com" class="mr-4 ml-4 menu-item">Inicio</a>
         </div>
+        <div
+          class="col-3 col-md-3 align-items-center justify-content-center hidden-md-up"
+        >
+          <ion-icon
+            onclick="toggleMenu()"
+            class="menu-toggler"
+            name="reorder-three-outline"
+          ></ion-icon>
+        </div>
+        <div class="col-3 col-md-3 align-items-center justify-content-center hidden-md-down">
+          <div id="MyClockDisplay-md" class="clock w-100 text-center" onload="showTime()"></div>
+        </div>
+      </div>
+      <div class="row menu">
+        <a href="" class="menu-item">Iniciar sesion</a>
       </div>
     </header>
     <main>
       <div class="row main-desc mt-5 mb-5">
-        <div class="col-12 offset-md-2 col-md-4">
+        <div class="col-12 offset-md-2 col-md-4 mt-5">
           <h1>Buy and sell cryptos easier than ever</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dolor fugiat veritatis! </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+            dolor fugiat veritatis!
+          </p>
         </div>
       </div>
       <div class="row brands-container mt-5">
-        <div class="col-4 col-md-2 p-4">
+        <div class="col-4 offset-md-1 col-md-2 p-4 d-flex align-items-center">
           <img
             class="brand-logo"
-            src="https://lh3.googleusercontent.com/proxy/oRLu5yD-CdiHSftsCHdAaIYnJ0ixgEZp01xaNphnUE7EUkPoVwmJRDIbzu8Tz0U6whPDNKC3e1eJFmaOKdKNhw9lezKhly0mNZq7xDe4STgVA0XPS48"
+            src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg"
             alt=""
           />
         </div>
         <div class="col-4 col-md-2 p-4">
           <img
             class="brand-logo"
-            src="https://lh3.googleusercontent.com/proxy/oRLu5yD-CdiHSftsCHdAaIYnJ0ixgEZp01xaNphnUE7EUkPoVwmJRDIbzu8Tz0U6whPDNKC3e1eJFmaOKdKNhw9lezKhly0mNZq7xDe4STgVA0XPS48"
+            src="assets/images/ar-curr.png"
             alt=""
           />
         </div>
         <div class="col-4 col-md-2 p-4">
           <img
             class="brand-logo"
-            src="https://lh3.googleusercontent.com/proxy/oRLu5yD-CdiHSftsCHdAaIYnJ0ixgEZp01xaNphnUE7EUkPoVwmJRDIbzu8Tz0U6whPDNKC3e1eJFmaOKdKNhw9lezKhly0mNZq7xDe4STgVA0XPS48"
+            src="assets/images/co-curr.png"
             alt=""
           />
         </div>
-        <div class="col-4 col-md-2 p-4">
+        <div class="offset-2 col-4 offset-md-0 col-md-2 p-4">
           <img
             class="brand-logo"
-            src="https://lh3.googleusercontent.com/proxy/oRLu5yD-CdiHSftsCHdAaIYnJ0ixgEZp01xaNphnUE7EUkPoVwmJRDIbzu8Tz0U6whPDNKC3e1eJFmaOKdKNhw9lezKhly0mNZq7xDe4STgVA0XPS48"
+            src="assets/images/ve-curr.png"
             alt=""
           />
         </div>
-        <div class="col-4 col-md-2 p-4">
+        <div class="col-4 col-md-2 p-4 d-flex align-items-center">
           <img
             class="brand-logo"
-            src="https://lh3.googleusercontent.com/proxy/oRLu5yD-CdiHSftsCHdAaIYnJ0ixgEZp01xaNphnUE7EUkPoVwmJRDIbzu8Tz0U6whPDNKC3e1eJFmaOKdKNhw9lezKhly0mNZq7xDe4STgVA0XPS48"
-            alt=""
-          />
-        </div>
-        <div class="col-4 col-md-2 p-4">
-          <img
-            class="brand-logo"
-            src="https://lh3.googleusercontent.com/proxy/oRLu5yD-CdiHSftsCHdAaIYnJ0ixgEZp01xaNphnUE7EUkPoVwmJRDIbzu8Tz0U6whPDNKC3e1eJFmaOKdKNhw9lezKhly0mNZq7xDe4STgVA0XPS48"
+            src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg"
             alt=""
           />
         </div>
@@ -168,11 +182,12 @@
           <img src="assets/logos/coinback-logo.png" class="logo" alt="" />
           Coinback &copy;
           <p class="mt-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </p>
-          <ion-icon name="logo-twitter" class="ml-2 mr-2"></ion-icon>
-          <ion-icon name="logo-facebook" class="ml-2 mr-2"></ion-icon>
-          <ion-icon name="logo-instagram" class="ml-2 mr-2"></ion-icon>
+          <a href=""><img src="assets/logos/appstore-logo.png"class="ml-2 mr-2 logo-social"></img></a>
+          <a href=""><img src="assets/logos/google-play-logo.png" class="ml-2 mr-2 logo-social"></img></a>
+          <a href=""><img src="assets/logos/whatsapp-logo.png" class="ml-2 mr-2 logo-social"></img></a>
+          <!-- <a href=""><ion-icon class="logo-social ml-2 mr-2" name="logo-twitter"></ion-icon></a> -->
         </div>
       </div>
       <div class="col-12 col-md-6 row">

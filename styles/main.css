@@ -9,7 +9,7 @@
 }
 
 header {
-  height: 60px;
+  height: 90px;
   width: 100%;
   background-color: #070E21;
   z-index: 10;
@@ -37,8 +37,8 @@ header.opaque {
 main {
   padding: 15px;
   background-color: #070E21;
-  margin-top: -60px;
-  padding-top: 60px;
+  margin-top: -90px;
+  padding-top: 90px;
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
@@ -46,6 +46,18 @@ main {
 
 .main-desc {
   height: 60vh;
+  background-image: url('https://images.squarespace-cdn.com/content/v1/54e9bcf0e4b003ce1bd31f1d/1539041611129-GK1T35LQCI3EXW1H49DY/ke17ZwdGBToddI8pDm48kK1sQoW6KlGRsxnGBzrkXDsUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dkv3RD5EVOqX413-LZmMQgkgECT1AMHBwZnWiWxjKnM8JvwGh1qtNWvMhYKnvaKhbA/1_m_b1W3dyZZgkBVbOMUMa8Q.jpg?format=2500w');
+  background-size: cover;
+  width: 100vw;
+  margin-left: -15px!important;
+  box-shadow: 10px 10px 40px 40px #070E20;
+}
+
+.logo-social {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: #4E18E2;
 }
 
 footer {
@@ -72,10 +84,83 @@ footer ul > li {
   display: none;
 }
 
+.hidden-md-up {
+  display: flex;
+}
+
+.menu-toggler {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #17D4FE;
+  font-size: 20px;
+  font-family: Orbitron;
+  letter-spacing: 5px;
+}
+
+.menu {
+  position: relative;
+  background-color: #0b205c;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  z-index: 10;
+  visibility: hidden;
+  transition: height ease-in 0.1s;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-image: url('https://lh3.googleusercontent.com/proxy/tsVT2bC37zfSWML8zcV4PpIAodRLF9dDlIGG5awadQ4d5CHy-ZLiueSF5nhOtfBj758TR9gdaXlah8-z5AOZgR6w41FUkUyITskTuH4G5jcuSHv0MwaN6gSco6PIutpB4Zmk9q26');
+  box-shadow: 0px 20px 20px 0px #000000;
+}
+
+.menu a {
+  width: 100%;
+  text-align: start;
+  font-weight: 700;
+}
+
+.menu-item {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.menu.open {
+  visibility: visible;
+  height: 200px;
+}
 
 @media (min-width: 768px) {
   .md-p-10 {
     padding: 100px 100px!important;
+  }
+
+  .hidden-md-up {
+    display: none;
+  }
+
+  .menu-toggler {
+    display: none;
+  }
+
+  .menu-item {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition-duration: 0.3s;
+    font-size: 20px;
+  }
+
+  .menu-item:hover{ 
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
   }
   
   .hidden-md-down {
