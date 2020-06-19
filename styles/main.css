@@ -12,6 +12,19 @@ a:visited {
   text-decoration: none;
 }
 
+.img {
+  width: auto;
+  height: auto;
+  max-width: 150;
+  max-height: 150px;
+}
+.info {
+  padding-left: 20px!important;
+}
+.info > h1 {
+  font-size: 20px;
+}
+
 .row {
   margin-left: 0!important;
   margin-right: 0!important;
