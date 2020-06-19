@@ -3,6 +3,15 @@
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: white!important;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 .row {
   margin-left: 0!important;
   margin-right: 0!important;
@@ -15,6 +24,10 @@ header {
   z-index: 10;
   position: fixed;
   top: 0;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 header.opaque {
@@ -104,6 +117,20 @@ footer ul > li {
   letter-spacing: 5px;
 }
 
+.download-btn {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: #5f019e;
+  width: 300px;
+  transition: all ease-in 0.2s;
+  padding: 5px 5px;
+}
+
+.download-btn:hover {
+  background-color: transparent;
+  border: 2px solid purple;
+}
+
 .menu {
   position: relative;
   background-color: #0b205c;
@@ -116,12 +143,14 @@ footer ul > li {
   transition: height ease-in 0.1s;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-image: url('https://lh3.googleusercontent.com/proxy/tsVT2bC37zfSWML8zcV4PpIAodRLF9dDlIGG5awadQ4d5CHy-ZLiueSF5nhOtfBj758TR9gdaXlah8-z5AOZgR6w41FUkUyITskTuH4G5jcuSHv0MwaN6gSco6PIutpB4Zmk9q26');
+  background-image: url('../assets/images/background-menu.png');
   box-shadow: 0px 20px 20px 0px #000000;
 }
 
 .menu a {
   width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: start;
   font-weight: 700;
 }
@@ -139,6 +168,10 @@ footer ul > li {
 @media (min-width: 768px) {
   .md-p-10 {
     padding: 100px 100px!important;
+  }
+
+  .md-p-5 {
+    padding: 50px 50px!important;
   }
 
   .hidden-md-up {
