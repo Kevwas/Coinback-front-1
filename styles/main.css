@@ -418,11 +418,64 @@ footer ul > li {
   
 }
 
+.selectdiv {
+  position: relative;
+  /*Don't really need this just for demo styling*/
+  background-color: transparent;
+  min-width: 150px;
+  max-width: 150px;
+  overflow: scroll;
+}
+
+.selectdiv:after {
+  content: '\f078';
+  font: normal normal normal 17px/1 FontAwesome;
+  color: #4F599F;
+  right: 11px;
+  top: 0;
+  height: 34px;
+  padding: 7% 0px 0px 13%;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+  display: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  text-align: end;
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 30px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: none;
+  border-bottom: 1px solid #4F599F;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
 @media (max-height: 540px) {
   .info-coin {
     top: 85%;
   }
   
+  .coin-7 {
+    left: -12%; top: 34%; width: 35%;
+  }
 
   .square-white-2 {
     top: 120%;

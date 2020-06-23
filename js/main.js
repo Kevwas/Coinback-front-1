@@ -12,6 +12,25 @@ const toggleMenu = () => {
 
 };
 
+const fetchCountries = () => {
+  const selectEl = document.querySelector('#countrySelect');
+
+  fetch('https://restcountries.eu/rest/v2/all').then(res => res.json()).then(
+    data => {
+      
+      let htmlText = '';
+      data.filter(c => c.subregion === 'South America').forEach(country => {
+        console.log(htmlText)
+        htmlText += `<option value="${country.alpha2Code}">${country.nativeName}</option>`
+
+        selectEl.innerHTML = htmlText;
+      });
+    }
+  )
+}
+
+fetchCountries();
+
 // const clickLink = () => {
 //   const menuEl = document.querySelector('.menu');
 //   const menuToggEl = document.querySelector('.menu-toggler');

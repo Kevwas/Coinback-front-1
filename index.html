@@ -42,6 +42,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
     <script src="js/brands.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Coinback</title>
   </head>
   <body>
@@ -118,18 +122,27 @@
         </div>
       </div>
       <div class="row desc-1 low-division">
-        <div class="col-9 offset-3 position-relative child" style="top: -10%;">
+        <div class="d-flex align-items-end flex-column col-9 offset-3 position-relative child" style="top: -10%;">
           <p class="text-dark text-center" >
             Encuentra la disponibilidad de CB en tu pais aqui.
           </p>
+          <div class="selectdiv">
+            <label>
+              <select id="countrySelect">
+                <option selected>Argentina</option>
+                
+              </select>
+            </label>
+          </div>
         </div>
+      
         <div class="offset-1 col-4 text-purple child">
           <img src="assets/images/co-curr.png" class="img w-100" alt="">
         </div>
-        <div class="col-6 text-purple d-flex align-items-center child">
+        <div class="col-6 text-purple child">
           <p>COINBACK DISPONIBLE PARA TU PAIS.</p>
         </div>
-        
+        <p class="side-text m-0" style="transform: skewY(-10deg) rotate(180deg); right: 0;">WWW.COINBACK.COM</p>
       </div>
       <div class="row mt-5 mb-5 low-division">
         <div class="col-12 row child">
