@@ -135,6 +135,7 @@ main {
 }
 
 .desc-1 {
+  margin-top: -1px;
   height: 60vh;
   background-image: url('../assets/images/background-3.jpg');
   background-size: cover;
@@ -149,7 +150,7 @@ main {
 }
 
 .text-purple {
-  color: #4E18E2;
+  color: #606399;
   font-size: 20px;
 }
 
