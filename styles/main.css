@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: Gothic;
-  src: url("../assets/fonts/warsawgothic.otf") format("opentype");
+  src: url("../assets/fonts/LeagueGothic-Regular.otf") format("opentype");
 }
 
 a {
@@ -32,9 +32,8 @@ a:visited {
   max-height: 150px;
 }
 .info {
-  margin-top: 72vw;
   color: #606399;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
 }
 .info > h1 {
@@ -47,7 +46,7 @@ a:visited {
 }
 
 header {
-  height: 50px;
+  height: 70px;
   width: 100%;
   padding-top: 10px;
   background-color: #070E21;
@@ -62,6 +61,13 @@ header.opaque {
   width: 10%;
 }
 
+.dark-bg {
+  background-color: #070E21;
+}
+
+.light-bg {
+  background-color: white;
+}
 .brands-container {
   margin-top: 60px;
 }
@@ -81,8 +87,6 @@ main {
 
 .clock-info {
   font-size: 30px;
-  margin-top: 15vw;
-  margin-bottom: 0;
   font-family: Gothic;
   line-height-step: 1px;
 }
@@ -122,24 +126,64 @@ main {
 .main-desc {
   color: white;
   height: 105vw;
-  background-image: url('../assets/images/background-1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-color: #0C091E; */
+  
 }
 
+.side-text {
+  position: absolute;
+  right: 5px;
+  top: 45%;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  -webkit-transform: skewY(45deg) rotate(180deg);
+  -moz-transform: skewY(45deg) rotate(180deg);
+  -ms-transform: skewY(45deg) rotate(180deg);
+  -o-transform: skewY(45deg) rotate(180deg);
+  transform: skewY(45deg) rotate(180deg);
+}
+
+.division {
+  
+  -webkit-transform: skewY(-45deg);
+  -moz-transform: skewY(-45deg);
+  -ms-transform: skewY(-45deg);
+  -o-transform: skewY(-45deg);
+  transform: skewY(-45deg);
+}
+
+.low-division{
+  -webkit-transform: skewY(10deg);
+  -moz-transform: skewY(10deg);
+  -ms-transform: skewY(10deg);
+  -o-transform: skewY(10deg);
+  transform: skewY(10deg);
+}
+
+.low-division > .child {
+  -webkit-transform: skewY(-10deg);
+  -moz-transform: skewY(-10deg);
+  -ms-transform: skewY(-10deg);
+  -o-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+}
+
+.division > .child {
+  -webkit-transform: skewY(45deg);
+  -moz-transform: skewY(45deg);
+  -ms-transform: skewY(45deg);
+  -o-transform: skewY(45deg);
+  transform: skewY(45deg);
+}
 .desc {
-  height: 60vh;
-  background-image: url('../assets/images/background-2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  min-height: 60vh;
+  background-color: white;
 }
 
 .desc-1 {
   margin-top: -1px;
-  height: 60vh;
-  background-image: url('../assets/images/background-3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 40vh;
+  background-color: white;
 }
 
 .logo-social {
@@ -276,9 +320,21 @@ footer ul > li {
 
 .img-floating {
   position: absolute;
+  z-index: 10;
   width: 100%;
 }
 
+.img-opaque {
+  opacity: 50%;
+}
+
+.square-white {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
 @media (min-width: 768px) {
 
   .clock {
