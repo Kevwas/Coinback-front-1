@@ -1,6 +1,19 @@
 * {
   box-sizing: border-box;
-  color: white;
+  font-family: Gothic;
+}
+
+
+:root {
+  --width: 300px;
+  --height: 100px;
+  --top-color: #f44336;
+  --bottom-color: #2196F3;
+}
+
+@font-face {
+  font-family: Gothic;
+  src: url("../assets/fonts/warsawgothic.otf") format("opentype");
 }
 
 a {
@@ -13,13 +26,16 @@ a:visited {
 }
 
 .img {
-  width: auto;
+  width: 100%;
   height: auto;
   max-width: 150px;
   max-height: 150px;
 }
 .info {
-  padding-left: 20px!important;
+  margin-top: 72vw;
+  color: #606399;
+  font-size: 20px;
+  text-align: center;
 }
 .info > h1 {
   font-size: 20px;
@@ -31,26 +47,19 @@ a:visited {
 }
 
 header {
-  height: 90px;
+  height: 50px;
   width: 100%;
+  padding-top: 10px;
   background-color: #070E21;
   z-index: 10;
-  position: fixed;
   top: 0;
 }
-
-body {
-  overflow-x: hidden;
-  max-width: 100vw;
-}
-
 header.opaque {
   position: initial;
 }
 
 .logo {
   width: 10%;
-  max-width: 50px;
 }
 
 .brands-container {
@@ -59,25 +68,77 @@ header.opaque {
 
 .brand-logo {
   width: 100%;
+  font-size: 30px;
+  color: white;
 }
 
 main {
-  padding: 15px;
   background-color: #070E21;
-  margin-top: -90px;
-  padding-top: 90px;
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
 }
 
+.clock-info {
+  font-size: 30px;
+  margin-top: 15vw;
+  margin-bottom: 0;
+  font-family: Gothic;
+  line-height-step: 1px;
+}
+
+
+.clock {
+  height: 50px;
+  width: 100%;
+  word-break: keep-all;
+  left: 55%;
+  color: #C11060;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.clock-footer {
+  margin-top: -10px;
+  font-size: 30px;
+  font-family: Gothic;
+}
+
+.button-outlined {
+  border: 2px solid #4E18E2;
+  width: 100%;
+  max-width: 100%;
+  color: #4E18E2;
+}
+
+.button-outlined-white {
+  border: 2px solid white;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  color: white;
+}
+
 .main-desc {
-  height: 60vh;
-  background-image: url('https://images.squarespace-cdn.com/content/v1/54e9bcf0e4b003ce1bd31f1d/1539041611129-GK1T35LQCI3EXW1H49DY/ke17ZwdGBToddI8pDm48kK1sQoW6KlGRsxnGBzrkXDsUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dkv3RD5EVOqX413-LZmMQgkgECT1AMHBwZnWiWxjKnM8JvwGh1qtNWvMhYKnvaKhbA/1_m_b1W3dyZZgkBVbOMUMa8Q.jpg?format=2500w');
+  color: white;
+  height: 105vw;
+  background-image: url('../assets/images/background-1.jpg');
   background-size: cover;
-  width: 100vw;
-  margin-left: -15px!important;
-  box-shadow: 10px 10px 40px 40px #070E20;
+  background-repeat: no-repeat;
+}
+
+.desc {
+  height: 60vh;
+  background-image: url('../assets/images/background-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.desc-1 {
+  height: 60vh;
+  background-image: url('../assets/images/background-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .logo-social {
@@ -85,6 +146,11 @@ main {
   height: 30px;
   font-size: 30px;
   color: #4E18E2;
+}
+
+.text-purple {
+  color: #4E18E2;
+  font-size: 20px;
 }
 
 footer {
@@ -120,17 +186,27 @@ footer ul > li {
   cursor: pointer;
 }
 
-.clock {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  word-break: keep-all;
-  left: 55%;
-  transform: translateX(-50%) translateY(-50%);
-  color: #17D4FE;
-  font-size: 15px;
-  font-family: Orbitron;
-  letter-spacing: 5px;
+.input-container {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  display: flex;
+  font-size: 8px;
+  justify-content: center;
+}
+
+.input-container label {
+  color: white;
+  margin-bottom: 0;
+}
+
+.input-container input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  flex: 1;
+  color: white;
 }
 
 .download-btn {
@@ -157,7 +233,7 @@ footer ul > li {
   height: 0px;
   z-index: 10;
   visibility: hidden;
-  transition: height ease-in 0.1s;
+  transition: height ease-out 0.1s;
   padding-left: 1rem;
   padding-right: 1rem;
   background-image: url('../assets/images/background-menu.png');
@@ -179,6 +255,7 @@ footer ul > li {
 
 .menu.open {
   visibility: visible;
+  width: 100%;
   height: 200px;
 }
 
@@ -188,6 +265,17 @@ footer ul > li {
   background-size: cover;
   background-position-y: -40px;
   background-position-x: -20px;
+}
+
+.phone-container {
+  background-image: url('../assets/images/phone-transparent.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.img-floating {
+  position: absolute;
+  width: 100%;
 }
 
 @media (min-width: 768px) {

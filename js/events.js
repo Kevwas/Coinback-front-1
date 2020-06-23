@@ -1,27 +1,27 @@
-const debounce = fn => {
-  let frame;
-  return (...params) => {
-    if (frame) {
-      cancelAnimationFrame(frame);
-    }
-    frame = requestAnimationFrame(() => {
-      fn(...params);
-    });
-  };
-};
+// const debounce = fn => {
+//   let frame;
+//   return (...params) => {
+//     if (frame) {
+//       cancelAnimationFrame(frame);
+//     }
+//     frame = requestAnimationFrame(() => {
+//       fn(...params);
+//     });
+//   };
+// };
 
-const storeScroll = () => {
-  if (window.scrollY === 0) {
-    document.querySelector('header').classList.add('opaque');
-  } else {
-    document.querySelector('header').classList.remove('opaque');
-  }
-};
+// const storeScroll = () => {
+//   if (window.scrollY === 0) {
+//     document.querySelector('header').classList.add('opaque');
+//   } else {
+//     document.querySelector('header').classList.remove('opaque');
+//   }
+// };
 
 
-document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+// document.addEventListener('scroll', debounce(storeScroll), { passive: true });
 
-storeScroll();
+// storeScroll();
 
 function getTimeRemaining(endtime){
   const total = Date.parse(endtime) - Date.parse(new Date());
@@ -62,13 +62,13 @@ function showTime(){
   remaining.minutes = (remaining.minutes < 10) ? "0" + remaining.minutes :remaining.minutes;
   remaining.seconds = (remaining.seconds < 10) ? "0" + remaining.seconds : remaining.seconds;
   
-  var time = remaining.days + "d " + remaining.hours + ":" +  remaining.minutes + ":" +  remaining.seconds;
+  var time = remaining.days + ":" + remaining.hours + ":" +  remaining.minutes;
   if (window.innerWidth >= 768 && window.outerWidth >= 768) {
     document.getElementById("MyClockDisplay-md").innerText = time;
     document.getElementById("MyClockDisplay-md").textContent = time;
   } else {
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
+    document.getElementById("clock").innerText = time;
+    document.getElementById("clock").textContent = time;
   }
   
   
@@ -76,4 +76,4 @@ function showTime(){
   
 }
 
-showTime();
+  showTime()

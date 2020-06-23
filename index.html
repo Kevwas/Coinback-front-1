@@ -46,139 +46,128 @@
   </head>
   <body>
     <header>
-      <div class="row p-3 w-100">
-        <div class="col-3 col-md-3">
-          <img src="assets/logos/coinback-logo.png" class="w-100 logo" alt="" />
+      <div class="row w-100">
+        <div class="col-5 p-1 col-md-3">
+          <img src="assets/logos/coinback-logo-TEXT-.png" class="w-100" alt="">
         </div>
-        <div class="col-7 hidden-md-up">
-          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
-        </div>
-        <div
-          class="col-12 col-md-6 hidden-md-down justify-content-center align-items-center"
-        >
+        <div class="col-md-6 hidden-md-down justify-content-center align-items-center">
           <a href="www.pagolinea.com" class="mr-4 ml-4 menu-item"
             >Iniciar sesion</a
           >
           <a href="www.coinback.com" class="mr-4 ml-4 menu-item">Registrarse</a>
           <a href="www.facebook.com" class="mr-4 ml-4 menu-item">Inicio</a>
         </div>
-        <div
-          class="col-2 col-md-3 align-items-center justify-content-center p-0 hidden-md-up"
-        >
+        <div class="col-2 offset-5 align-items-center justify-content-center p-0 hidden-md-up">
           <ion-icon
             onclick="toggleMenu()"
-            class="menu-toggler"
+            id="toggle-icon"
+            class="menu-toggler text-light"
             name="reorder-three-outline"
           ></ion-icon>
         </div>
-        <div class="col-3 col-md-3 align-items-center justify-content-center hidden-md-down">
-          <div id="MyClockDisplay-md" class="clock w-100 text-center" onload="showTime()"></div>
+        <div class="row menu">
+          <a href="" class="menu-item">Iniciar sesion</a>
+          <a href="" class="menu-item">Registrarse</a>
+          <a href="" class="menu-item">Wallet</a> 
         </div>
-      </div>
-      <div class="row menu">
-        <a href="" class="menu-item">Iniciar sesion</a>
-        <a href="" class="menu-item">Registrarse</a>
-        <a href="" class="menu-item">Wallet</a>
       </div>
     </header>
     <main>
-      <div class="row main-desc mb-5">
-        <div class="col-6 offset-md-2 col-md-4 mt-5 info">
-          <h1>CREADA A BASE DE BLOCKCHAIN</h1>
-          <img src="assets/images/img-5.png" class="img hidden-md-down" alt="">
+      <div class="row main-desc">
+        <div class="offset-1 col-7 offset-md-2 col-md-4 d-flex flex-column justify-content-start align-items-center">
+          <p class="clock-info text-center">
+            UNA BILLETERA DIGITAL PARA PERSONAS EN:
+          </p>
+          <div class="clock text-center" id="clock"></div>
+          <div class="row">
+            <div class="col-4">DIAS</div>
+            <div class="col-4">HORAS</div>
+            <div class="col-4">MIN</div>
+            <div class="col-12 d-flex justify-content-center">
+              <a href=""><img src="assets/logos/gplay-logo.png" class="logo-social mr-2" alt=""></a>
+              <a href=""><img src="assets/logos/apple-logo-white.png" alt="" class="logo-social"></a>
+            </div>
+          </div>
         </div>
-        <div class="col-6 hidden-md-up mt-1 p-0">
-          <img src="assets/images/cb-pc.png" class="img" alt="">
-        </div>
-        <div class="col-6 mt-1 hidden-md-up">
-          <img src="assets/images/img-5.png" class="img w-100 h-100" alt="">
-        </div>
-        <div class="col-md-5 offset-md-1 mt-1 hidden-md-down">
-          <img src="assets/images/img-4.png" class="img" alt="">
+        <div class="col-4 col-md-6"></div>
+      </div>
+      <div class="row desc">
+        <div class="offset-6 col-6 d-flex flex-column align-items-center">
+          <p class="info">SOY EL TIPO DE MONEDA QUE SOPORTA PAGOS ONLINE PARA NEGOCIOS.</p> 
+          <button class="button-outlined w-75">Ir</button>
         </div>
       </div>
-      <div class="row brands-container mt-5 mb-5">
-        <div class="col-3 offset-md-2 col-md-2 d-flex align-items-center">
-          <img
-            class="brand-logo"
-            src="assets/images/usd-curr.png"
-            alt=""
-          />
+      <div class="row desc-1">
+        <div class="col-9 offset-3 mt-3">
+          <p class="text-dark text-center">
+            Encuentra la disponibilidad de CB en tu pais aqui.
+          </p>
         </div>
-        <div class="col-3 col-md-2">
-          <img
-            class="brand-logo"
-            src="assets/images/co-curr.png"
-            alt=""
-          />
+        <div class="offset-1 col-4 text-purple">
+          <img src="assets/images/co-curr.png" class="img w-100" alt="">
         </div>
-        <div class="col-3 offset-md-0 col-md-2">
-          <img
-            class="brand-logo"
-            src="assets/images/ar-curr.png"
-            alt=""
-          />
+        <div class="col-6 text-purple d-flex align-items-center">
+          <p>COINBACK DISPONIBLE PARA TU PAIS.</p>
         </div>
-        <div class="col-3 col-md-2">
-          <img
-            class="brand-logo"
-            src="assets/images/ve-curr.png"
-            alt=""
-          />
-        </div>
-        </div>
-      </div>
-      <div class="row p-3 mb-5 mt-1">
-        <div class="col-6 md-p-10 info">
-          <h1>SOY LA MONEDA DE RESPALDO QUE QUIERES QUE SEA</h1>
-        </div>
-        <div class="col-6 d-flex justify-content-center align-items-center">
-          <img
-            src="assets/images/img-1.png"
-            class="img"
-            alt=""
-          />
+        <div class="col-12 mt-5 d-flex flex-column align-items-center justify-content-center" style="margin-top: 45vw!important;">
+          <ion-icon class="brand-logo" name="logo-instagram"></ion-icon>
+          <button class="button-outlined-white w-25 mt-2" >Ir</button>
+          <p class="text-light">Manten informado por redes.</p>
         </div>
       </div>
       <div class="row mt-5 mb-5">
-        <div class="col-12 d-flex justify-content-center">
-          <ion-icon name="logo-twitter" style="font-size: 40px;"></ion-icon>
+        
+        <img src="assets/logos/coinback-logo.png" style="transform: rotate(45deg); left: -20px;" class="img-floating w-25" alt="">
+        <img src="assets/logos/coinback-logo.png" style="transform: rotate(45deg) translate(-25px, 200px);" class="img-floating w-75" alt="">
+        <!-- <img src="assets/logos/coinback-logo.png" style="transform: rotate(45deg); left: -20px;" class="img-floating w-25" alt=""> -->
+        <div class="col-5 offset-5 phone-container p-0">
+          <div class=" d-flex flex-column justify-content-center align p-4 ">
+            <p class="text-light p-1">MI EXTRENO SERA EXCLUSIVO PARA</p>
+            <img src="assets/logos/logo-white-transparent.png" class="img" alt="">
+            <button class="button-outlined-white w-100">Ir a PagoLinea</button>
+          </div>
+          
         </div>
-        <div class="col-12 text-center mb-3 mt-3">
-          <button class="download-btn">Descarga la app</button>
-        </div>
-        <div class="col-12 d-flex justify-content-center align-items-center">
-          <img src="assets/logos/coinback-logo.png" alt="" class="logo mr-2" />
-          Coinback &copy;
-        </div>
-      </div>
-      <div class="row p-3 mt-5 mb-1">
-        <div class="col-6 mb-4 d-flex justify-content-center align-items-center">
-          <img
-            src="assets/images/img-2.png"
-            class="img"
-            alt=""
-          />
-        </div>
-        <div class="col-6 col-md-6 md-p-10 info">
-          <h1>Get detailed information</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            veritatis laborum mo
-          </p>
+        <div class="col-1 d-flex flex-column justify-content-end p-0">
+          <a href=""><img src="assets/logos/google-play-logo.png" alt="" class="logo-social"></a>
+          <a href=""><img src="assets/logos/appstore-logo.png" alt="" class="logo-social"></a>
+
         </div>
       </div>
-      <div class="row p-3 mb-5 map-container">
-        <div class="col-6 col-md-4 d-flex justify-content-center align-items-center text-center">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta </p>
+      <div class="row map-container">
+        <div class="col-5 offset-1 p-2">
+          <p class="text-light text-center">COMO SOY UNA MONEDA DE RESPALDO MI VALOR LO GENERA LA CRIPTOMONEDA QUE COMPRAS O TRANSACCIONAS, ASEGURATE DE COMPRAR LAS MAS USADAS.</p>
         </div>
-        <div class="col-6 col-md-4 md-p-5 d-flex justify-content-center">
-          <img src="assets/images/img-3.png" class="w-100" alt="">
-        </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center text-center mt-5">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cumque </p>
+        <div class="col-5">
+          <img src="assets/images/img-1.png" alt="" class="img">
         </div>
       </div>
+      <div class="col-12 text-center text-light">
+        <p style="font-size: 10px;">COMO SOY UNA MONEDA DE RESPALDO MI VALOR LO GENERA LA CRIPTOMONEDA QUE COMPRAS O TRANSACCIONAS, ASEGURATE DE COMPRAR LAS MAS USADAS.</p>
+      </div>
+      <div class="row">
+        <div class="col-5 offset-1">
+          <img src="assets/images/img-2.png" alt="" class="img">
+        </div>
+        <div class="col-5 p-4">
+          <p class="text-light text-center">COMPRA BTC EN GRANDES FRACCIONES AQUI DE FORMA 100% SEGURA.</p>
+          <div class="input-container">
+            <label for="">Nombre completo</label>
+            <input type="text">
+          </div>
+          <div class="input-container">
+            <label for="">
+              Numero de celular
+            </label>
+            <input type="text">
+          </div>
+          <div class="input-container">
+            <label for="">Correo electronico</label>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+      
     </main>
     <footer class="row">
       <div class="col-12 col-md-6 row mb-3">
@@ -191,7 +180,7 @@
           <a href=""><img src="assets/logos/appstore-logo.png"class="ml-2 mr-2 logo-social"></img></a>
           <a href=""><img src="assets/logos/google-play-logo.png" class="ml-2 mr-2 logo-social"></img></a>
           <a href=""><img src="assets/logos/whatsapp-logo.png" class="ml-2 mr-2 logo-social"></img></a>
-          <!-- <a href=""><ion-icon class="logo-social ml-2 mr-2" name="logo-twitter"></ion-icon></a> -->
+          <a href=""><ion-icon class="logo-social ml-2 mr-2" name="logo-twitter"></ion-icon></a> 
         </div>
       </div>
       <div class="col-12 col-md-6 row">

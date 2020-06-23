@@ -10,15 +10,6 @@ const toggleMenu = () => {
     ? togglerIconEl.setAttribute('name', 'close-outline')
     : togglerIconEl.setAttribute('name', 'reorder-three-outline');
 
-  const menuLiEl = document
-    .querySelector('.menu-li')
-    .getElementsByTagName('li');
-  for (let i = 0; i < menuLiEl.length; i++) {
-    const element = menuLiEl[i];
-    setTimeout(() => {
-      element.classList.toggle('open');
-    }, i * 50);
-  }
 };
 
 // const clickLink = () => {
