@@ -358,9 +358,9 @@ footer ul > li {
 }
 
 .img-pick {
-  top: 52%;
+  top: 55%;
   left: -1%;
-  max-width: 100px;
+  max-width: 15vh;
   z-index: -1;
 }
 
