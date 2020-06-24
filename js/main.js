@@ -20,7 +20,6 @@ const fetchCountries = () => {
       
       let htmlText = '';
       data.filter(c => c.subregion === 'South America').forEach(country => {
-        console.log(htmlText)
         htmlText += `<option value="${country.alpha2Code}">${country.nativeName}</option>`
 
         selectEl.innerHTML = htmlText;

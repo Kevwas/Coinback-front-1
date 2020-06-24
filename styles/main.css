@@ -93,13 +93,14 @@ main {
 
 
 .clock {
+  position: relative;
+  top: -6%;
   height: 50px;
   width: 100%;
   word-break: keep-all;
-  left: 55%;
   color: #C11060;
-  font-size: 40px;
-  letter-spacing: 5px;
+  font-size: 65px;
+  letter-spacing: -2px;
 }
 
 .clock-footer {
@@ -125,7 +126,7 @@ main {
 
 .main-desc {
   color: white;
-  height: 105vw;
+  height: 44vh;
   /* background-color: #0C091E; */
   
 }
@@ -357,8 +358,10 @@ footer ul > li {
 }
 
 .img-pick {
-  top: 60%;
-  left: -7%;
+  top: 52%;
+  left: -1%;
+  max-width: 100px;
+  z-index: -1;
 }
 
 .coin-1 {

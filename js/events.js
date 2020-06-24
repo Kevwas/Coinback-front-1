@@ -62,7 +62,7 @@ function showTime(){
   remaining.minutes = (remaining.minutes < 10) ? "0" + remaining.minutes :remaining.minutes;
   remaining.seconds = (remaining.seconds < 10) ? "0" + remaining.seconds : remaining.seconds;
   
-  var time = remaining.days + ":" + remaining.hours + ":" +  remaining.minutes;
+  var time = remaining.days + ":" + remaining.hours + ":" +  remaining.minutes + ":" + remaining.seconds;
   if (window.innerWidth >= 768 && window.outerWidth >= 768) {
     document.getElementById("MyClockDisplay-md").innerText = time;
     document.getElementById("MyClockDisplay-md").textContent = time;
