@@ -46,10 +46,10 @@ a:visited {
 }
 
 header {
-  height: 70px;
+  height: 50px;
   width: 100%;
   padding-top: 10px;
-  background-color: #070E21;
+  background-color: white;
   z-index: 10;
   top: 0;
 }
@@ -88,13 +88,13 @@ main {
 .clock-info {
   font-size: 30px;
   font-family: Gothic;
-  line-height-step: 1px;
+  line-height: 30px;
 }
 
 
 .clock {
   position: relative;
-  top: -8%;
+  top: -6%;
   height: 50px;
   width: 100%;
   word-break: keep-all;
@@ -110,14 +110,15 @@ main {
 }
 
 .button-outlined {
-  border: 2px solid #4E18E2;
+  border: 1px solid #4E18E2;
   width: 100%;
+  background-color: transparent;
   max-width: 100%;
   color: #4E18E2;
 }
 
 .button-outlined-white {
-  border: 2px solid white;
+  border: 1px solid white;
   width: 100%;
   max-width: 100%;
   background-color: transparent;
@@ -126,7 +127,7 @@ main {
 
 .main-desc {
   color: white;
-  height: 44vh;
+  height: 80vw;
   /* background-color: #0C091E; */
   
 }
@@ -306,6 +307,7 @@ footer ul > li {
 }
 
 .map-container {
+  margin-top: 20%;
   background-image: url('../assets/images/map-transparent.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -315,6 +317,8 @@ footer ul > li {
 
 .phone-container {
   z-index: 10;
+  height: 280px;
+  max-width: 150px!important;
   background-image: url('../assets/images/phone-transparent.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -336,14 +340,16 @@ footer ul > li {
   left: 0;
   width: 200px;
   height: 200px;
+  z-index: -10;
 }
 
 .square-white-2 {
   position: absolute;
   top: 110%;
   left: 0;
-  width: 200px;
-  height: 150px;
+  width: 400px;
+  height: 200px;
+  z-index: -10;
 }
 
 .square-white-3 {
@@ -352,9 +358,10 @@ footer ul > li {
   left: 0;
   width: 200px;
   height: 200px;
+  z-index: -10;
 }
 .info-coin {
-  top: 75%;
+  top: 80vw;
 }
 
 .img-pick {
@@ -362,6 +369,16 @@ footer ul > li {
   left: -1%;
   max-width: 15vh;
   z-index: -1;
+}
+
+
+.select-div-cripto select {
+  border: none;
+  background-color: transparent;
+}
+
+.select-div-cripto select:active {
+  border: none;
 }
 
 .coin-1 {
@@ -389,7 +406,7 @@ footer ul > li {
 }
 
 .coin-7 {
-  left: -12%; top: 16%; width: 35%;
+  left: -12%; top: -50%; width: 35%;
 }
 
 .coin-8 {

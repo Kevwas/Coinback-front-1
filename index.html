@@ -49,23 +49,33 @@
     <title>Coinback</title>
   </head>
   <body>
-    <header>
-      <div class="row w-100">
-        <div class="col-5 p-1 col-md-3">
-          <img src="assets/logos/coinback-logo-TEXT-.png" class="w-100" alt="">
+    <header class="p-0">
+      <div class="row" style="height: 100%;">
+        <div class="col-2 h-100 col-md-3 p-0">
+          <img src="assets/logos/coinback-logo.png"  style="height: 100%; width: 100%; max-width: 50px; max-height: 50px;" alt="">
         </div>
-        <div class="col-md-6 hidden-md-down justify-content-center align-items-center">
+        <div class="text-dark h-100 col-8 d-flex align-items-center justify-content-start" style="font-size: 20px;">
+          <div class="select-div-cripto">
+            <label class="mb-0 mr-2">
+              <select id="cryptoSelect">
+                <option value="BTC-USD" selected>BTC/USD</option>
+              </select>
+            </label>
+            
+          </div> USD 8655,18
+        </div>
+        <div class="col-md-6 h-100 hidden-md-down justify-content-center align-items-center">
           <a href="www.pagolinea.com" class="mr-4 ml-4 menu-item"
             >Iniciar sesion</a
           >
           <a href="www.coinback.com" class="mr-4 ml-4 menu-item">Registrarse</a>
           <a href="www.facebook.com" class="mr-4 ml-4 menu-item">Inicio</a>
         </div>
-        <div class="col-2 offset-5 align-items-center justify-content-center p-0 hidden-md-up">
+        <div class="col-2 h-100 align-items-center justify-content-center p-0 hidden-md-up">
           <ion-icon
             onclick="toggleMenu()"
             id="toggle-icon"
-            class="menu-toggler text-light"
+            class="menu-toggler text-dark"
             name="reorder-three-outline"
           ></ion-icon>
         </div>
@@ -79,8 +89,8 @@
     <main>
       <div class="row main-desc">
         <div class="row col-12 division dark-bg">
-          <div class="position-absolute child light-bg" style="top: 60%; left: -8%; width: 50px; height: 8vh; transform: skewY(48deg) skewX(10deg);"></div>
-          <div class="position-absolute child light-bg" style="top: 77%; left: 4%; width: 4vh; height: 5vh; transform: skewY(45deg) skewX(17deg);"></div>
+          <div class="position-absolute child light-bg" style="top: 60%; left: -8%; width: 12vw; height: 15vw; transform: skewY(48deg) skewX(10deg);"></div>
+          <div class="position-absolute child light-bg" style="top: 75%; left: 3%; width: 4vh; height: 10vw; transform: skewY(45deg) skewX(17deg);"></div>
           <div class="position-absolute child light-bg"></div>
           <img src="assets/images/pick.png" alt="" class="img img-pick child position-absolute">
           <div class="square-white-1 light-bg child"></div>
@@ -111,7 +121,6 @@
           <img src="assets/logos/coinback-logo.png" class="img-floating child coin-4" alt="">
           <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-5" alt="">
           <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-6" alt="">
-          <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-7" alt="">
           <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-8" alt="">
           <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-9" alt="">
           <div class="offset-6 col-6 child">
@@ -126,6 +135,8 @@
         </div>
       </div>
       <div class="row desc-1 low-division">
+        
+        <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-7" alt="">
         <div class="d-flex align-items-end flex-column col-9 offset-3 position-relative child" style="top: -10%;">
           <p class="text-dark text-center" >
             Encuentra la disponibilidad de CB en tu pais aqui.
