@@ -49,12 +49,13 @@ header {
   height: 50px;
   width: 100%;
   padding-top: 10px;
-  background-color: white;
+  background-color: #070E21;
   z-index: 10;
   top: 0;
+  position: fixed;
 }
 header.opaque {
-  position: initial;
+  position: initial!important;
 }
 
 .logo {
@@ -98,7 +99,8 @@ main {
   height: 50px;
   width: 100%;
   word-break: keep-all;
-  color: #C11060;
+  /* color: #C11060; */
+  color: white;
   font-size: 65px;
   letter-spacing: -2px;
 }
@@ -307,7 +309,7 @@ footer ul > li {
 }
 
 .map-container {
-  margin-top: 20%;
+  margin-top: 30%;
   background-image: url('../assets/images/map-transparent.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -488,6 +490,93 @@ select::-ms-expand {
   word-break: normal;
 }
 
+.social-vert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 24px;
+  height: 100px;
+  padding: 1px;
+  
+  position: fixed;
+  left: 2%;
+  top: 40%;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #070E21;
+  z-index: 100;
+}
+
+.social-vert > a {
+  height: 16px;
+  width: 16px;
+}
+
+.card-custom {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  overflow: visible;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card-custom-decor {
+  width: 25%;
+}
+
+.card-circle {
+  position: relative;
+border-radius: 50%;
+width: 50px;
+height:50px;
+  z-index: 1;
+  background-color: #e9e9e9;
+  left: 60%;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px 2px #45336B;
+}
+
+.card-circle-internal {
+  background-image: url('../assets/logos/coinback-logo.png');
+  background-size: cover;
+  border-radius: 100%;
+  z-index: 1;
+  background-color: #e9e9e9;
+  border: 1px solid #070E21;
+  height: 60%;
+  width: 60%;
+}
+.card-custom-content {
+  width: 75%;
+  border: 1px solid #bf33ff;
+  position: relative;
+  left: -5%;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20%;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-custom-content > p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.card-custom-title {
+  height: 10%;
+  font-size: 20px;
+}
+
+
 @media (max-height: 540px) {
   .info-coin {
     top: 85%;
@@ -501,10 +590,14 @@ select::-ms-expand {
     top: 120%;
     height: 120px;
   }
+
 }
 
 @media (min-width: 768px) {
 
+  .card-custom-content {
+    padding-left: 10%;
+  }
   .clock {
     font-size: 20px;
   }
