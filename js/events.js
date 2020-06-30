@@ -63,13 +63,10 @@ function showTime(){
   remaining.seconds = (remaining.seconds < 10) ? "0" + remaining.seconds : remaining.seconds;
   
   var time = remaining.days + ":" + remaining.hours + ":" +  remaining.minutes + ":" + remaining.seconds;
-  if (window.innerWidth >= 768 && window.outerWidth >= 768) {
-    document.getElementById("MyClockDisplay-md").innerText = time;
-    document.getElementById("MyClockDisplay-md").textContent = time;
-  } else {
+  
     document.getElementById("clock").innerText = time;
     document.getElementById("clock").textContent = time;
-  }
+ 
   
   
   setTimeout(showTime, 1000);
