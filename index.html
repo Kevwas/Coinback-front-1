@@ -57,10 +57,8 @@
     </div>
     <header class="p-0">
       <div class="row" style="height: 100%;">
-        <div class="col-2 h-100 col-md-3 p-0">
-          <img src="assets/logos/coinback-logo.png"  style="height: 100%; width: 100%; max-width: 50px; max-height: 50px;" alt="">
-        </div>
-        <div class="text-light h-100 col-8 d-flex align-items-center justify-content-start" style="font-size: 20px;">
+        <p class="side-text m-0 text-light" style="font-size: 12px;">SOY UNA MONEDA DE RESPALDO</p>
+        <div class="text-light col-6 d-flex align-items-center justify-content-start h-25" style="font-size: 15px;">
           <div class="select-div-cripto">
             <label class="mb-0 mr-2">
               <select id="cryptoSelect" class="text-light">
@@ -70,21 +68,33 @@
             
           </div> USD 8655,18
         </div>
-        <div class="col-md-6 h-100 hidden-md-down justify-content-center align-items-center">
+        <div class="col-1 col-md-3 p-0 h-25 d-flex align-items-center">
+          <img src="assets/logos/coinback-logo.png" class="header-coin" alt="">
+        </div>
+        
+        <div class="col-md-6 hidden-md-down justify-content-center align-items-start h-25">
           <a href="www.pagolinea.com" class="mr-4 ml-4 menu-item"
             >Iniciar sesion</a
           >
           <a href="www.coinback.com" class="mr-4 ml-4 menu-item">Registrarse</a>
           <a href="www.facebook.com" class="mr-4 ml-4 menu-item">Inicio</a>
         </div>
-        <div class="col-2 h-100 align-items-center justify-content-center p-0 hidden-md-up">
+        <div class="offset-3 col-2 d-flex align-items-center justify-content-center p-0 hidden-md-up h-25">
           <ion-icon
             onclick="toggleMenu()"
             id="toggle-icon"
             class="menu-toggler text-light"
             name="reorder-three-outline"
-            style="height: 70%;"
+            style="height: 100%;"
           ></ion-icon>
+        </div>
+        <div class="col-8 mb-2 ">
+          <p class="text-purple" style="line-height: 20px;">
+            PROXIMAMENTE PODRAS USAR MI <span class="text-light">WALLET</span> PARA TUS OPERACIONES CRIPTO.
+          </p>
+
+            <a href="#" style="width: 30%;" class="d-block btn-purple">Leer mas</a>
+          
         </div>
         <div class="row menu">
           <a href="" class="menu-item">Iniciar sesion</a>
@@ -95,59 +105,106 @@
     </header>
     <main>
       <div class="row main-desc">
-        <div class="row col-12 division dark-bg">
-          <div class="position-absolute child light-bg" style="top: 60%; left: -8%; width: 12vw; height: 15vw; transform: skewY(48deg) skewX(10deg);"></div>
-          <div class="position-absolute child light-bg" style="top: 75%; left: 3%; width: 4vh; height: 10vw; transform: skewY(45deg) skewX(17deg);"></div>
-          <div class="position-absolute child light-bg"></div>
-          <img src="assets/images/pick.png" alt="" class="img img-pick child position-absolute">
-          <div class="square-white-1 light-bg child"></div>
-          <p class="side-text m-0" style="font-size: 1vh; top: 66%;">SOY UNA MONEDA DE RESPALDO OFICIAL</p>
-          <div class="offset-1 col-8 offset-md-2 col-md-4 d-flex flex-column justify-content-start align-items-center child">
+        <div class="col-12 division dark-bg">
+          <img src="assets/images/bomb.png" alt="" class="bomb-img">
+          
+          <div class="offset-2 col-8 offset-md-2 col-md-4 align-items-center child h-25">
             <p class="clock-info text-center mb-0">
-              UNA BILLETERA DIGITAL PARA PERSONAS EN:
+              FECHA DE LANZAMIENTO
             </p>
             <div class="clock text-center" id="clock"></div>
-            <div class="row clock-footer">
+            <div class="row clock-footer text-purple">
               <div class="col-3 d-flex justify-content-end">DIAS</div>
               <div class="col-3 d-flex justify-content-center">HORAS</div>
               <div class="col-3 d-flex justify-content-start">MIN</div>
-              <div class="col-3 d-flex justify-content-start">SEG</div>
+              <div class="col-3 d-flex justify-content-start pl-0">SEGUN</div>
               <!-- <div class="col-12 d-flex justify-content-center">
                 <a href=""><img src="assets/logos/gplay-logo.png" class="logo-social mr-2" alt=""></a>
                 <a href=""><img src="assets/logos/apple-logo-white.png" alt="" class="logo-social"></a>
               </div> -->
+              
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row desc">
-        <div class="col-12 row division light-bg">
-          <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-1" alt="">
-          <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-2" alt="">
-          <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-3" alt="">
-          <img src="assets/logos/coinback-logo.png" class="img-floating child coin-4" alt="">
-          <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-5" alt="">
-          <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-6" alt="">
-          <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-8" alt="">
-          <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-9" alt="">
-          <div class="offset-6 col-6 offset-md-5 child">
-            <div class="w-100 position-relative d-flex flex-column align-items-center info-coin">
-              <p class="info mb-0" >SOY EL TIPO DE MONEDA QUE SOPORTA PAGOS ONLINE PARA NEGOCIOS.</p> 
-              <a href=""><button style="width: 70px; margin: auto;" class="button-outlined">Ir</button></a>
+          <div class="child col-8 p-0 offset-2 d-flex justify-content-center align-items-center flex-column" style="font-size: 22px;">
+            <div class="text-light text-center mt-5" style="line-height: 22px;">
+              SOY EL TIPO DE MONEDA QUE SOPORTA PAGOS ONLINE PARA NEGOCIOS.
             </div>
-            
-            <div class="square-white-2 position-absolute light-bg"></div>
+            <a class="btn-purple mt-3 text-light">Ir</a>
           </div>
-          
+          <div class="child col-12 text-center mt-5 p-0" style="font-style: oblique; line-height: 25px;">
+            <p>CUENTO CON AMPLIOS BENEFICIOS AL USARME COMO<br> <span class="text-purple" style="font-size: 30px;">MONEDA DE RESPALDO FAVORITA.</span></p>
+            <div class="w-100 d-flex justify-content-center">
+              <div style="width: 35%;">
+                <div class="card-custom" style="height: 30%;">
+                  <div class="card-custom-decor">
+                    <div class="card-circle" style="width: 25px; height: 25px;">
+                      <div class="card-circle-internal"></div>
+                    </div>
+                  </div>
+                  <div class="card-custom-content">
+                    <div class="card-custom-title" style="font-size: 2vw;">
+                      <span>NO ES POSIBLE HACKEARME</span>
+                    </div>
+                    <p>Estoy construida a base de BLOCKCHAIN.</p>
+                  </div>
+                </div>
+                <div class="h-25"></div>
+                <div class="card-custom" style="height: 30%;">
+                  <div class="card-custom-decor">
+                    <div class="card-circle" >
+                      <div class="card-circle-internal"></div>
+                    </div>
+                  </div>
+                  <div class="card-custom-content">
+                    <div class="card-custom-title" style="font-size: 2vw;">
+                      CRECEN TUS AHORROS.
+                    </div>
+                    <p style=" font-size: 2vw;">Creceran de acuerdo a la cripto que compres.</p>
+                  </div>
+                </div>
+              </div>
+              <div style="width: 30%" class="pl-4 mt-3">
+                <img src="assets/images/phone-transparent.png" class="w-100" style="transform: rotate(-10deg);" alt="">
+              </div>
+              <div style="width: 35%;">
+                <div class="card-custom" style="height: 30%;">
+                  <div class="card-custom-decor">
+                    <div class="card-circle" >
+                      <div class="card-circle-internal"></div>
+                    </div>
+                  </div>
+                  <div class="card-custom-content">
+                    <div class="card-custom-title" style="font-size: 2vw;">
+                      DISPONIBLE 24/7 PARA OPERAR
+                    </div>
+                    <p style=" font-size: 2vw;">Podés operar en cualquier horario internacional.</p>
+                  </div>
+                </div>
+                <div class="h-25"></div>
+                <div class="card-custom" style="height: 30%;">
+                  <div class="card-custom-decor">
+                    <div class="card-circle" >
+                      <div class="card-circle-internal"></div>
+                    </div>
+                  </div>
+                  <div class="card-custom-content">
+                    <div class="card-custom-title" style="font-size: 2vw;">
+                      EN TODAS LAS APPS STORE.
+                    </div>
+                    <p style=" font-size: 2vw;">Debido a mi tecnologia punta mi app es igual en ambos SO.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row desc-1 low-division">
-        
-        <img src="assets/logos/coinback-logo.png" class="img-floating child img-opaque coin-7" alt="">
-        <div class="d-flex align-items-end flex-column col-9 offset-3 position-relative child country-container" style="top: -10%;">
-          <p class="text-dark text-center" >
-            Encuentra la disponibilidad de CB en tu pais aqui.
-          </p>
+        <div class="col-4 child pt-5">
+          <img src="assets/images/co-curr.png" class="img w-100" alt="">
+        </div>
+        <div class="d-flex align-items-end flex-column col-8 position-relative child country-container">
+          
           <div class="selectdiv">
             <label>
               <select id="countrySelect">
@@ -156,16 +213,11 @@
               </select>
             </label>
           </div>
+          <p class="text-dark text-center w-75" style="font-style: oblique; font-size: 25px;">
+            Consulte aquí si estoy disponible para tu pais..
+          </p>
         </div>
-        <div class="col-12 row child coins-avail">
-          <div class="offset-1 col-4 offset-md-3 col-md-2 text-purple child">
-            <img src="assets/images/co-curr.png" class="img w-100" alt="">
-          </div>
-          <div class="col-6 text-purple child coins-avail-text">
-            <p>COINBACK DISPONIBLE PARA TU PAIS.</p>
-          </div>
-        </div>
-        <p class="side-text m-0" style="transform: skewY(-10deg) rotate(180deg); right: 0;">WWW.COINBACK.COM</p>
+        <!-- <p class="side-text m-0" style="transform: skewY(-10deg) rotate(180deg); right: 0;">WWW.COINBACK.COM</p> -->
       </div>
       <div class="row mt-5 mb-5 low-division">
         <div class="col-12 row child">
@@ -196,15 +248,12 @@
         </div>
       </div>
       <div class="row map-container">
-        <div class="col-5 offset-1 p-2 d-flex align-items-center">
-          <p class="text-light text-center">COMO SOY UNA MONEDA DE RESPALDO MI VALOR LO GENERA LA CRIPTOMONEDA QUE COMPRAS O TRANSACCIONAS, ASEGURATE DE COMPRAR LAS MAS USADAS.</p>
+        <div class="col-10 offset-1 col-md-8 offset-md-2 p-2 d-flex align-items-center">
+          <p class="text-light text-center"><span class="text-purple">ASEGURATE DE COMPRAR LAS MAS POPULARES POR SEGURIDAD</span><br>COMO SOY UNA MONEDA DE RESPALDO MI VALOR LO GENERA LA CRIPTOMONEDA QUE NOS COMPRAS</p>
         </div>
-        <div class="col-5 p-0">
+        <div class="col-6 offset-4 p-0">
           <img src="assets/images/img-1.png" alt="" class="img">
         </div>
-      </div>
-      <div class="col-12 text-center text-light map-footer mt-5">
-        <p style="font-size: 10px;">COMO SOY UNA MONEDA DE RESPALDO MI VALOR LO GENERA LA CRIPTOMONEDA QUE COMPRAS O TRANSACCIONAS, ASEGURATE DE COMPRAR LAS MAS USADAS.</p>
       </div>
       <div class="row mt-5">
         <div class="col-5 offset-1 p-0">
@@ -227,70 +276,6 @@
             <input type="text">
           </div>
         </div>
-      </div>
-      <div class="row mb-5 cards-row mt-5">
-        <div class="col-10 offset-1 col-md-6 offset-md-0">
-          <div class="card-custom">
-            <div class="card-custom-decor">
-              <div class="card-circle">
-                <div class="card-circle-internal"></div>
-              </div>
-            </div>
-            <div class="card-custom-content">
-              <div class="card-custom-title mb-4">
-                Highly mantained
-              </div>
-              <p>Lorem ipsum dolor sit, a.asdadsdadsadsadadadadsadadas</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-10 offset-1 col-md-6 offset-md-0">
-          <div class="card-custom">
-            <div class="card-custom-decor">
-              <div class="card-circle">
-                <div class="card-circle-internal"></div>
-              </div>
-            </div>
-            <div class="card-custom-content">
-              <div class="card-custom-title mb-4">
-                Highly mantained
-              </div>
-              <p>Lorem ipsum dolor sit, a.asdadsdadsadsadadadadsadadas</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-10 offset-1 col-md-6 offset-md-0">
-          <div class="card-custom">
-            <div class="card-custom-decor">
-              <div class="card-circle">
-                <div class="card-circle-internal"></div>
-              </div>
-            </div>
-            <div class="card-custom-content">
-              <div class="card-custom-title mb-4">
-                Highly mantained
-              </div>
-              <p>Lorem ipsum dolor sit, a.asdadsdadsadsadadadadsadadas</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-10 offset-1 col-md-6 offset-md-0">
-          <div class="card-custom">
-            <div class="card-custom-decor">
-              <div class="card-circle">
-                <div class="card-circle-internal"></div>
-              </div>
-            </div>
-            <div class="card-custom-content">
-              <div class="card-custom-title mb-4">
-                Highly mantained
-              </div>
-              <p>Lorem ipsum dolor sit, a.asdadsdadsadsadadadadsadadas</p>
-            </div>
-          </div>
-        </div>
-        </div>
-        
       </div>
     </main>
     <footer class="row">

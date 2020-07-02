@@ -8,6 +8,7 @@
   --height: 100px;
   --top-color: #f44336;
   --bottom-color: #2196f3;
+  --purple-color: #A992E2;
 }
 
 @font-face {
@@ -45,16 +46,40 @@ a:visited {
 }
 
 header {
-  height: 50px;
+  height: 150px;
   width: 100%;
   padding-top: 10px;
   background-color: #070e21;
+  background-image: url("../assets/images/header-back.png");
+  background-size: cover;
   z-index: 10;
   top: 0;
   position: fixed;
 }
+
+.header-coin {
+  height: 100%;
+  width: 100%;
+  max-width: 25px;
+  max-height: 25px;
+}
 header.opaque {
   position: initial !important;
+}
+
+header.opaque .side-text {
+  position: absolute;
+}
+
+header > .row {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bomb-img {
+  position: absolute;
+  width: 75%;
+  transform: skew(-5deg);
+  right: -30%;
 }
 
 .logo {
@@ -62,7 +87,7 @@ header.opaque {
 }
 
 .dark-bg {
-  background-color: #070e21;
+  background-color: black;
 }
 
 .light-bg {
@@ -79,34 +104,41 @@ header.opaque {
 }
 
 main {
-  background-color: #070e21;
+  background-color: black;
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
 }
 
 .clock-info {
-  font-size: 30px;
+  font-size: 25px;
   font-family: Gothic;
   line-height: 30px;
 }
 
 .clock {
+  letter-spacing: 1px;
   position: relative;
-  top: -6%;
+  top: -18px;
   height: 50px;
-  width: 100%;
-  word-break: keep-all;
-  /* color: #C11060; */
-  color: white;
-  font-size: 65px;
-  letter-spacing: -2px;
+  font-size: 50px;
 }
 
 .clock-footer {
   margin-top: -10px;
-  font-size: 30px;
+  font-size: 22px;
   font-family: Gothic;
+  font-style: oblique;
+}
+
+.btn-purple {
+  background-image: url('../assets/images/btn-back.png');
+  background-size: cover;
+  width: 45%;
+  font-style: oblique;
+  border: none;
+  outline: none;
+  text-align: center;
 }
 
 .button-outlined {
@@ -127,29 +159,30 @@ main {
 
 .main-desc {
   color: white;
-  height: 80vw;
+  height: 100vh;
+  padding-top: 20px;
   /* background-color: #0C091E; */
 }
 
 .side-text {
-  position: absolute;
+  position: fixed;
   right: 5px;
-  top: 45%;
+  top: 6%;
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  -webkit-transform: skewY(45deg) rotate(180deg);
-  -moz-transform: skewY(45deg) rotate(180deg);
-  -ms-transform: skewY(45deg) rotate(180deg);
-  -o-transform: skewY(45deg) rotate(180deg);
-  transform: skewY(45deg) rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .division {
-  -webkit-transform: skewY(-45deg);
-  -moz-transform: skewY(-45deg);
-  -ms-transform: skewY(-45deg);
-  -o-transform: skewY(-45deg);
-  transform: skewY(-45deg);
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+  transform: skewY(5deg);
 }
 
 .low-division {
@@ -169,11 +202,11 @@ main {
 }
 
 .division > .child {
-  -webkit-transform: skewY(45deg);
-  -moz-transform: skewY(45deg);
-  -ms-transform: skewY(45deg);
-  -o-transform: skewY(45deg);
-  transform: skewY(45deg);
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
 }
 .desc {
   min-height: 60vh;
@@ -181,7 +214,7 @@ main {
 }
 
 .desc-1 {
-  margin-top: -1px;
+  padding-top: 45px;
   height: 40vh;
   background-color: white;
 }
@@ -194,7 +227,7 @@ main {
 }
 
 .text-purple {
-  color: #606399;
+  color: var(--purple-color);
   font-size: 20px;
 }
 
@@ -306,6 +339,7 @@ footer ul > li {
 }
 
 .map-container {
+  font-style: oblique;
   margin-top: 30%;
   background-image: url("../assets/images/map-transparent.png");
   background-repeat: no-repeat;
@@ -441,7 +475,10 @@ footer ul > li {
 .coin-13 {
 }
 .coin-14 {
-  right: -18%; top: 50%; width: 30%; transform: rotate(60deg);
+  right: -18%;
+  top: 50%;
+  width: 30%;
+  transform: rotate(60deg);
 }
 .coin-15 {
   left: -37%;
@@ -468,11 +505,11 @@ footer ul > li {
 .selectdiv:after {
   content: "\f078";
   font: normal normal normal 17px/1 FontAwesome;
-  color: #4f599f;
+  color: var(--purple-color);
   right: 11px;
   top: 0;
   height: 34px;
-  padding: 7% 0px 0px 13%;
+  padding: 14% 0px 0px 13%;
   position: absolute;
   pointer-events: none;
 }
@@ -491,11 +528,11 @@ select::-ms-expand {
   display: block;
   width: 100%;
   max-width: 320px;
-  height: 30px;
+  height: 50px;
   float: right;
   margin: 5px 0px;
   padding: 0px 24px;
-  font-size: 16px;
+  font-size: 30px;
   line-height: 1.75;
   color: #333;
   background-color: #ffffff;
@@ -535,6 +572,8 @@ select::-ms-expand {
   display: flex;
   overflow: visible;
   margin-bottom: 10px;
+  color: black;
+  font-style: normal;
   margin-top: 10px;
 }
 
@@ -545,8 +584,8 @@ select::-ms-expand {
 .card-circle {
   position: relative;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   z-index: 1;
   background-color: #e9e9e9;
   left: 60%;
@@ -569,11 +608,11 @@ select::-ms-expand {
 }
 .card-custom-content {
   width: 75%;
-  border: 1px solid #bf33ff;
+  border: 1px solid var(--purple-color);
   position: relative;
   left: -5%;
   border-radius: 10px;
-  padding: 5px;
+  padding: 0;
   padding-left: 20%;
 
   background-color: white;
@@ -586,10 +625,14 @@ select::-ms-expand {
   text-overflow: ellipsis;
   overflow: hidden;
   margin-bottom: 0;
+  line-height: 12px;
+  font-size: 10px;
 }
 .card-custom-title {
-  height: 10%;
-  font-size: 20px;
+  height: 35%;
+  color: var(--purple-color);
+  font-size: 2vw;
+  font-style: oblique;
 }
 
 @media (max-height: 540px) {
@@ -677,6 +720,18 @@ select::-ms-expand {
 
   .card-custom-content {
     padding-left: 10%;
+    font-size: unset;
+  }
+
+  .card-circle {
+    
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-custom-title {
+    height: 10%;
+    font-size: 20px;
   }
 
   .img {
@@ -819,15 +874,15 @@ select::-ms-expand {
     max-width: 255px !important;
   }
 
-  .map-container{
+  .map-container {
     font-size: 40px;
     margin-top: 20%;
     background-position-x: 0px;
     background-position-y: -350px;
   }
 
-  .map-footer >p {
-    font-size: 25px!important;
+  .map-footer > p {
+    font-size: 25px !important;
   }
 
   .form-title {
