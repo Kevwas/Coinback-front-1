@@ -66,7 +66,8 @@ function showTime(){
   
     document.getElementById("clock").innerText = time;
     document.getElementById("clock").textContent = time;
- 
+    document.getElementById("clock-foot").innerText = time;
+    document.getElementById("clock-foot").textContent = time;
   
   
   setTimeout(showTime, 1000);

@@ -8,7 +8,7 @@
   --height: 100px;
   --top-color: #f44336;
   --bottom-color: #2196f3;
-  --purple-color: #A992E2;
+  --purple-color: #a992e2;
 }
 
 @font-face {
@@ -78,7 +78,6 @@ header > .row {
 .bomb-img {
   position: absolute;
   width: 75%;
-  transform: skew(-5deg);
   right: -30%;
 }
 
@@ -132,7 +131,7 @@ main {
 }
 
 .btn-purple {
-  background-image: url('../assets/images/btn-back.png');
+  background-image: url("../assets/images/btn-back.png");
   background-size: cover;
   width: 45%;
   font-style: oblique;
@@ -413,25 +412,25 @@ footer ul > li {
   border: none;
 }
 
-.coin-1 {
+.card-1 {
   right: 10px;
   top: 15px;
   width: 10%;
 }
 
-.coin-2 {
+.card-2 {
   top: 3%;
   right: 8%;
   width: 15%;
 }
 
-.coin-3 {
+.card-3 {
   top: 20%;
   right: -2%;
   width: 10%;
 }
 
-.coin-4 {
+.card-4 {
   top: 6%;
   right: -15%;
   width: 78%;
@@ -567,7 +566,7 @@ select::-ms-expand {
 }
 
 .card-custom {
-  height: 100px;
+  height: 30%;
   width: 100%;
   display: flex;
   overflow: visible;
@@ -626,13 +625,22 @@ select::-ms-expand {
   overflow: hidden;
   margin-bottom: 0;
   line-height: 12px;
-  font-size: 10px;
+  font-size: 2vw;
+  text-align: left;
 }
 .card-custom-title {
   height: 35%;
   color: var(--purple-color);
   font-size: 2vw;
   font-style: oblique;
+}
+
+.launch-text {
+  font-size: 45px;
+  line-height: 40px;
+  z-index: 11;
+  top: 42%;
+  left: 10%;
 }
 
 @media (max-height: 540px) {
@@ -654,7 +662,7 @@ select::-ms-expand {
 
 @media (min-width: 768px) {
   .main-desc {
-    height: 30vw;
+    height: 160vh;
   }
 
   .desc {
@@ -662,17 +670,17 @@ select::-ms-expand {
   }
 
   .side-text {
-    position: absolute;
+    position: fixed;
     right: 5px;
-    top: 45%;
+    top: 5%;
     font-size: 13px !important;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    -webkit-transform: skewY(20deg) rotate(180deg);
-    -moz-transform: skewY(20deg) rotate(180deg);
-    -ms-transform: skewY(20deg) rotate(180deg);
-    -o-transform: skewY(20deg) rotate(180deg);
-    transform: skewY(20deg) rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 
   .clock {
@@ -718,19 +726,26 @@ select::-ms-expand {
     transform: skewY(-20deg);
   }
 
+  .card-custom {
+    height: 20%;
+  }
+
   .card-custom-content {
-    padding-left: 10%;
+    padding-left: 13%;
     font-size: unset;
   }
 
+  .card-custom-content > p {
+    line-height: 20px;
+  }
+
   .card-circle {
-    
     width: 50px;
     height: 50px;
   }
 
   .card-custom-title {
-    height: 10%;
+    height: 30%;
     font-size: 20px;
   }
 
@@ -750,13 +765,20 @@ select::-ms-expand {
   }
 
   .hidden-md-up {
-    display: none;
+    display: none !important;
   }
 
   .menu-toggler {
     display: none;
   }
 
+  .launch-text {
+    font-size: 70px;
+    line-height: 60px;
+    z-index: 11;
+    top: 42%;
+    left: 25%;
+  }
   .menu-item {
     color: white;
     text-decoration: none;
@@ -807,7 +829,7 @@ select::-ms-expand {
 
   .coin-14 {
     right: 16%;
-    top: 64%;
+    top: 53%;
     width: 21%;
     transform: rotate(60deg);
   }
@@ -834,7 +856,6 @@ select::-ms-expand {
 
   .country-container {
     font-size: 30px;
-    top: -60% !important;
   }
 
   .selectdiv {
