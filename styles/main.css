@@ -662,7 +662,7 @@ select::-ms-expand {
 
 @media (min-width: 768px) {
   .main-desc {
-    height: 160vh;
+    height: unset;
   }
 
   .desc {
@@ -733,10 +733,11 @@ select::-ms-expand {
   .card-custom-content {
     padding-left: 13%;
     font-size: unset;
+    padding-top: 15px;
   }
 
   .card-custom-content > p {
-    line-height: 20px;
+    line-height: 2vw;
   }
 
   .card-circle {
@@ -880,7 +881,7 @@ select::-ms-expand {
   .coins-avail {
     display: flex;
     align-items: center;
-    margin-top: -22%;
+    margin-top: -25%;
     font-size: 30px;
   }
 
