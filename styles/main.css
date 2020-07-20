@@ -513,6 +513,12 @@ footer ul > li {
   pointer-events: none;
 }
 
+@media (min-width: 500px) {
+  .selectdiv:after {
+    padding: 9% 0px 0px 13%;
+  }
+}
+
 /* IE11 hide native button (thanks Matt!) */
 select::-ms-expand {
   display: none;
