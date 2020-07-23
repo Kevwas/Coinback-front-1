@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
+
+
+$font: 'Lato', sans-serif;
+$big: 'Montserrat', sans-serif;
+
+$red: #EF2F3C;
+$white: #F6F4F3;
+$blue: #276FBF;
+$dark: #183059;
+$yellow: #F0A202;
+$primary: #640387;
+
+$star: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+.container-timer {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    @media (min-width:768px){
+        width: 650px;
+    }
+
+}
+
+h1 {
+    font-family: $font;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $dark;
+    
+}
+
+.social-vert {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 24px;
+    height: 100px;
+    padding: 1px;
+  
+    position: fixed;
+    left: 2%;
+    top: 40%;
+    border-radius: 10px;
+    border: 1px solid $white;
+    background-color: $primary;
+    z-index: 100;
+
+    @media (min-width: 500px) {
+        display: flex;
+        width: 30px;
+    }
+  }
+
+#timer {
+    color: $dark;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font;
+    font-size: .5em;
+    letter-spacing: 0px;
+    margin-top: 10%;
+
+    @media (min-width: 500px) {
+        font-size: .7em;
+        letter-spacing: 5px;
+    }
+}
+
+.days, .hours, .minutes, .seconds {
+    margin-left: 2px;
+    margin-right: 2px;
+    display: inline-block;
+    padding: 15px;
+    width: 75px;
+    border-radius: 5px;
+
+    @media (min-width: 500px) {
+        width: 125px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+    }
+}
+
+.days {
+    background: $white;
+}
+
+.hours {
+    background: $white;
+    color: $dark;
+}
+
+.minutes {
+    background: $white;
+}
+
+.seconds {
+    background: $white;
+.numbers {
+
+}
+}
+
+.numbers {
+    font-family: $big;
+    color: $dark;
+    font-size: 4em;
+}
+
+.white {
+    position: absolute;
+    background: $white;
+    height: 85px;
+    width: 75px;
+    left: 30%;
+    top: 2%;
+.triangle {
+    border-bottom: 14px solid black;
+}
+.string {
+    background:  black;
+    border: 1px solid black;
+}
+}
+
+.red {
+    position: absolute;
+    background: $red;
+    left: 18%;
+    top: 9%;
+    height: 65px;
+    width: 70px;
+.triangle {
+    border-bottom: 14px solid $red;
+}
+.string {
+    background: $red;
+    border: 1px solid $red;
+}
+}
+
+.blue {
+    position: absolute;
+    background: $blue;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 5%;
+.triangle {
+    border-bottom: 14px solid $blue;
+}
+.string {
+    background: $blue;
+    border: 1px solid $blue;
+}
+}
+
+.balloon {
+    border: 1px solid #000;
+    border-radius: 50% 50% 50% 50%/ 40% 40% 60% 60%;
+    z-index: 2;
+    @media (max-width:560px){
+        display: none;
+    }
+
+}
+
+.eye {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 40%;
+    left: 22%;
+    background: #000;
+    border-radius: 50%;
+&:after {
+     content: '';
+     left: 35px;
+     width: 7px;
+     height: 7px;
+     border-radius: 50%;
+     background: #000;
+     position: absolute;
+ }
+}
+
+.mouth {
+    position:absolute;
+    top: 45%;
+    left: 43%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.happy {
+    border: 2px solid;
+    border-color: transparent #000 #000 transparent;
+    transform: rotate(45deg);
+}
+
+.triangle {
+    position: absolute;
+    left: 40%;
+    bottom: -10%;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.string {
+    position: absolute;
+    height: 70px;
+    width: 1px;
+    left: 48%;
+    top: 100%;
+    z-index: -1;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background: $white;
+    -webkit-clip-path: $star;
+    clip-path: $star;
+}
+
+.star-red {
+    width: 30px;
+    height: 30px;
+    margin-left: 51px;
+    margin-top: -5px;
+    background: $red;
+    -webkit-clip-path: $star;
+    clip-path: $star;
+}
