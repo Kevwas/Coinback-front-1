@@ -1,6 +1,6 @@
 // solid Colors
 $sky-blue: rgb(115, 103, 240) !default;
-$blue: #263db5 !default;
+$blue: #21316E !default;
 $indigo: #6610f2 !default;
 $purple: #640387 !default;
 $purple-light: #7566b5 !default;
@@ -13,7 +13,7 @@ $teal: #20c997 !default;
 $cyan: #9c27b0 !default;
 $solid-colors: (
   "sky-blue": rgb(115, 103, 240),
-  "blue": #003473,
+  "blue": #21316E,
   "brown": #4e3634,
   "teal": #20c997,
   "green": #27ae60,
@@ -50,7 +50,7 @@ $gradient-colors: (
     "end-color": #da1b60
   ),
   gradient-black-blue: (
-    "start-color": #004e92,
+    "start-color": #21316E,
     "end-color": #000428
   ),
   gradient-black-gray: (
@@ -116,7 +116,7 @@ $transpaprent-gradient-colors: (
     "end-color": rgba(35, 58, 136, 0.753)
   ),
   gradient-black-blue: (
-    "start-color": #004e92,
+    "start-color": #21316E,
     "end-color": #000428
   ),
   gradient-black-gray: (
