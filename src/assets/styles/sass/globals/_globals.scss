@@ -11,9 +11,14 @@
 @import "box-shadow";
 @import "components/components";
 @import "header";
+@import "layout";
 @import "footer";
 @import "utilities/utilities";
 @import "views/views";
+
+
+
+
 body {
   line-height: 1.5;
   font-size: 15px;
@@ -305,9 +310,6 @@ blockquote {
 }
 
 @media only screen and (max-width: 764px) {
-  section#intro-wrap {
-    padding-top: 120px;
-  }
   .customizer.show {
     height: 500px;
     overflow-y: scroll;

@@ -1,141 +1,214 @@
 <!DOCTYPE html>
 <html lang="en" dir="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coinback | Inicio</title>
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/vendor/slick.css" />
+    <link rel="stylesheet" href="assets/styles/vendor/slick-theme.css" />
+    <link rel="stylesheet" href="assets/styles/vendor/aos.css" />
+    <link rel="stylesheet" href="assets/styles/vendor/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/styles/css/themes/lite-blue.min.css" />
+    <link rel="stylesheet" href="assets/styles/css/timer.min.css" />
+    <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
+    <script src="./assets/js/priceSelector.script.js"></script>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Coinback | Inicio</title>
-        <link rel="icon" href="assets/images/favicon.png">
-        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet">
-        <link rel="stylesheet" href="assets/styles/vendor/slick.css">
-        <link rel="stylesheet" href="assets/styles/vendor/slick-theme.css">
-        <link rel="stylesheet" href="assets/styles/vendor/aos.css">
-        <link rel="stylesheet" href="assets/styles/vendor/perfect-scrollbar.css">
-        <link rel="stylesheet" href="assets/styles/css/themes/lite-blue.min.css">
-        <link rel="stylesheet" href="assets/styles/css/timer.min.css">
-    </head>
+  <body class="text-left">
+    <div class="social-vert">
+      <a
+        target="_blank"
+        href="https://www.facebook.com/pagolinea.arg/?view_public_for=113671090077524"
+        ><i class="eva eva-facebook text-light"></i
+      ></a>
+      <a
+        target="_blank"
+        href="https://instagram.com/pago_linea?igshid=1e2uhnaoo44ce"
+        ><ion-icon name="logo-instagram" class="text-light"></ion-icon
+      ></a>
+      <a target="_blank" href=""
+        ><ion-icon name="logo-apple-appstore" class="text-light"></ion-icon
+      ></a>
+      <a target="_blank" href="https://www.pagolinea.com"
+        ><img src="assets/images/logo.png" class="w-100"
+      /></a>
+    </div>
+    <!-- Pre Loader Strat  -->
+    <div class="loadscreen" id="preloader">
+      <div class="loader spinner-bubble spinner-bubble-primary"></div>
+    </div>
+    <!-- Pre Loader end  -->
+    <div class="app-landing-wrap landing_wrap">
+      <div id="landing_wrap" class="landing-blue">
+        <!--=============== Header start ================-->
+        <div class="main-header header-fixed-default" id="home-header">
+          <nav
+            class="navbar container w-100 navbar-expand-lg navbar-transparent bg-transparent"
+          >
+            <div class="logo pt-2 pb-2">
+              <img src="./assets/images/landing/lOGO_d/logo.png" alt="" />
+            </div>
+            <price-selector
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#pricesCollapse"
+              aria-controls="pricesCollapse"
+              aria-expanded="false"
+              color="white" 
+              icon-color="white"
+              font-size="17px"
+            ></price-selector>
+            <div
+              class="menu-toggle navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="collapse" id="pricesCollapse">
+              <coingecko-coin-list-widget
+                width="100%"
+                coin-ids="bitcoin,ethereum"
+                currency="usd"
+                locale="en"
+              ></coingecko-coin-list-widget>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div style="margin: auto;"></div>
 
-    <body class="text-left">
-        <div class="social-vert">
-          <a target="_blank" href="https://www.facebook.com/pagolinea.arg/?view_public_for=113671090077524"><i class="eva eva-facebook text-light"></i></a>
-          <a target="_blank" href="https://instagram.com/pago_linea?igshid=1e2uhnaoo44ce"><ion-icon name="logo-instagram" class="text-light"></ion-icon></a>
-          <a target="_blank" href=""><ion-icon name="logo-apple-appstore" class="text-light"></ion-icon></a>
-          <a target="_blank" href="https://www.pagolinea.com"><img src="assets/images/logo.png" class="w-100"></a>
+              <div class="header-part-right">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="scroll-to nav-link m-2" href="#"
+                      >Inicio <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="scroll-to nav-link m-2" href="#features-wrap"
+                      >Caracteristicas</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="scroll-to nav-link m-2" href="#services-wrap"
+                      >Servicios</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="scroll-to nav-link m-2" href="#contacts-wrap"
+                      >Contactanos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#extra-feature-wrap"
+                      class="scroll-to nav-link m-2 m-2"
+                      >+</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="scroll-to nav-link m-2"
+                      href="www.app.pagolinea.com"
+                      >Iniciar Sesion
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="scroll-to nav-link m-2"
+                      href="www.app.pagolinea.com"
+                      >Ir a wallet
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-        <!-- Pre Loader Strat  -->
-        <div class="loadscreen" id="preloader">
-            <div class="loader spinner-bubble spinner-bubble-primary"></div>
-        </div>
-        <!-- Pre Loader end  -->
-        <div class="app-landing-wrap landing_wrap">
 
-            <div id="landing_wrap" class="landing-blue">
+        <!--=============== Header End ================-->
 
+        <!-- ============ Main content start ============= -->
+        <div class="main-content-wrap">
+          <!-- intro-section -->
+          <section
+            id="intro-wrap"
+            class="intro-ten-Wrap bg-primary text-left text-white"
+          >
+            <div class="container-responsive bg-wrap">
+              <div class="row bg-content">
+                <div class="col-md-6 intro-ten-LeftSection pr-3">
+                  <h1 class="main-title text-white t-shadow text-left">
+                    Hacemos que sea fácil comprar, vender, almacenar y usar tu
+                    dinero.
+                  </h1>
 
-
-
-
-                <!--=============== Header start ================-->
-                <div class="main-header header-fixed-default" id="home-header">
-                    <nav class="navbar container w-100 navbar-expand-lg navbar-transparent bg-transparent">
-
-                        <div class="logo pt-2 pb-2">
-                            <img src="./assets/images/landing/lOGO_d/logo.png" alt="">
-                        </div>
-
-                        <div class="menu-toggle navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                            <div style="margin: auto"></div>
-
-                            <div class="header-part-right">
-
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active">
-                                        <a class="scroll-to nav-link m-2" href="#">Inicio <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="scroll-to nav-link m-2" href="www.app.pagolinea.com">Ir a wallet </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="scroll-to nav-link m-2" href="#features-wrap">Caracteristicas</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="scroll-to nav-link m-2" href="#services-wrap">Servicios</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#extra-feature-wrap" class="scroll-to nav-link m-2 m-2">+</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="scroll-to nav-link m-2" href="#contacts-wrap">Contactanos</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </nav>
-
+                  <p class="text-20 mb-4">
+                    Estamos trabajando para garantizarte la mejor experiencia de
+                    mover dinero a tráves de nuestra aplicación movil.
+                  </p>
+                  <div class="mb-5 lead">
+                    <ul class="list-inline">
+                      <li class="mb-3">
+                        <i
+                          class="eva eva-checkmark-outline mr-2 text-warning"
+                        ></i>
+                        Facil de Usar
+                      </li>
+                      <li class="mb-3">
+                        <i
+                          class="eva eva-checkmark-outline mr-2 text-warning"
+                        ></i>
+                        Segura
+                      </li>
+                      <li class="mb-3">
+                        <i
+                          class="eva eva-checkmark-outline mr-2 text-warning"
+                        ></i>
+                        Confiable
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="intro-ten-Buttons d-flex justify-content-left">
+                    <a
+                      name=""
+                      href="https://app.pagolinea.com/pages/login"
+                      class="w-75 btn _round-button btn-white btn-lg pl-5 pr-5 pb-2 mr-2 mb-4 text-uppercase text-dark"
+                      href="#"
+                      role="button"
+                    >
+                      Iniciar Sesion
+                    </a>
+                  </div>
                 </div>
-
-                <!--=============== Header End ================-->
-
-
-
-
-
-
-
-
-                <!-- ============ Main content start ============= -->
-                <div class="main-content-wrap">
-                    <!-- intro-section -->
-                    <section id="intro-wrap" class="intro-ten-Wrap bg-primary text-left text-white">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 intro-ten-LeftSection pb-3">
-                                    <h1 class="font-weight-bold text-white text-30 mb-3 t-shadow">Hacemos que sea fácil comprar, vender, almacenar y usar tu dinero.</h1>
-                                    <p class="text-20 mb-4">Estamos trabajando para garantizarte la mejor experiencia de mover dinero a tráves de nuestra aplicación movil.</p>
-                                    <div class="mb-5 lead">
-                                        <ul class="list-inline">
-                                            <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>
-                                               Facil de Usar
-                                            </li>
-                                            <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>
-                                              Segura
-                                            </li>
-                                            <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>
-                                               Confiable
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="intro-ten-Buttons">
-                                        <a name=""  href="https://app.pagolinea.com/pages/login" class="btn half-button btn-outline-white btn-lg pl-5 pr-5 pb-2 mr-2 mb-4 text-uppercase" href="#" role="button">
-                                            Iniciar Sesion
-                                        </a>
-                                        <a  href="https://app.pagolinea.com/pages/register" class="btn half-button btn-light btn-lg pl-5 pr-5 pb-2 mb-4 text-uppercase" style="background-color: white; color: black;" href="#" role="button">
-                                           Registrarme
-                                        </a>
-
-                                    </div>
-
-                                </div>
-                                <div class="col-md-6 intro-ten-RightSection d-flex align-items-center">
-
-                                    <div class="intro-ten-ProductImage">
-                                        <img src="assets/images/landing/svg/v10-header4.svg" class="img-responsive" alt="img-intro">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <section id="timer-wrap" class="services-caurosel-wrap">
-                            <div class="container container-timer">
-                                <!-- <div class="balloon white">
+                <div
+                  class="col-md-6 d-flex align-items-center justify-content-center p-3"
+                >
+                  <div class="intro-ten-RightSection">
+                    <div class="intro-ten-ProductImage">
+                      <img
+                        src="https://www.bitstamp.net/s/webapp/images/landing/spotlight-m.png"
+                        class="img-responsive"
+                        alt="img-intro"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section id="timer-wrap" class="services-caurosel-wrap">
+              <div class="container container-timer">
+                <!-- <div class="balloon white">
                                     <div class="star-red"></div>
                                     <div class="face">
                                         <div class="eye"></div>
@@ -164,125 +237,361 @@
                                     <div class="triangle"></div>
                                     <div class="string"></div>
                                 </div> -->
-                                <div id="timer"></div>
-                                <h1 class="mt-5 text-light">Lanzamiento 29 de julio</h1>
-                            </div>
-                            </section>
-                        <div class="overlay">
+                <div id="timer"></div>
+                <h1 class="mt-5 text-light">Lanzamiento 29 de julio</h1>
+              </div>
+            </section>
+            <div class="overlay"></div>
+          </section>
 
+          <!-- end::intro-section -->
+
+          <section id="charts-wrap" class="charts-carousel-wrap pt-80">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    data-aos="fade-up"
+                    class="slick-charts-carousel-wrap mb-5"
+                  >
+                    <!-- start slider item -->
+                    <div class="chart-wrap">
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright">
+                          <a
+                            href="https://es.tradingview.com/symbols/KRAKEN-ETHUSD/"
+                            rel="noopener"
+                            target="_blank"
+                            ><span class="blue-text">Tipos del ETHUSD</span></a
+                          >
+                          por TradingView
                         </div>
+                        <script
+                          type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                          async
+                        >
+                          {
+                              "symbol": "BITBAY:BTCUSD",
+                              "width": "100%",
+                              "height": "100%",
+                              "locale": "es",
+                              "dateRange": "3m",
+                              "colorTheme": "light",
+                              "trendLineColor": "#37a6ef",
+                              "underLineColor": "#E3F2FD",
+                              "isTransparent": false,
+                              "autosize": true,
+                              "largeChartUrl": ""
+                          }
+                        </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <!-- end of slider item -->
+                    <!-- start slider item -->
+                    <div class="chart-wrap">
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright">
+                          <a
+                            href="https://es.tradingview.com/symbols/KRAKEN-ETHUSD/"
+                            rel="noopener"
+                            target="_blank"
+                            ><span class="blue-text">Tipos del ETHUSD</span></a
+                          >
+                          por TradingView
+                        </div>
+                        <script
+                          type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                          async
+                        >
+                          {
+                              "symbol": "KRAKEN:ETHUSD",
+                              "width": "100%",
+                              "height": "100%",
+                              "locale": "es",
+                              "dateRange": "3m",
+                              "colorTheme": "light",
+                              "trendLineColor": "#37a6ef",
+                              "underLineColor": "#E3F2FD",
+                              "isTransparent": false,
+                              "autosize": true,
+                              "largeChartUrl": ""
+                          }
+                        </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <!-- end of slider item -->
+                    <!-- start slider item -->
+                    <div class="chart-wrap">
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright">
+                          <a
+                            href="https://es.tradingview.com/symbols/KRAKEN-ETHUSD/"
+                            rel="noopener"
+                            target="_blank"
+                            ><span class="blue-text">Tipos del ETHUSD</span></a
+                          >
+                          por TradingView
+                        </div>
+                        <script
+                          type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                          async
+                        >
+                          {
+                              "symbol": "BITFINEX:XRPUSD",
+                              "width": "100%",
+                              "height": "100%",
+                              "locale": "es",
+                              "dateRange": "3m",
+                              "colorTheme": "light",
+                              "trendLineColor": "#37a6ef",
+                              "underLineColor": "#E3F2FD",
+                              "isTransparent": false,
+                              "autosize": true,
+                              "largeChartUrl": ""
+                          }
+                        </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <!-- end of slider item -->
+                    <!-- start slider item -->
+                    <div class="chart-wrap">
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright">
+                          <a
+                            href="https://es.tradingview.com/symbols/KRAKEN-ETHUSD/"
+                            rel="noopener"
+                            target="_blank"
+                            ><span class="blue-text">Tipos del ETHUSD</span></a
+                          >
+                          por TradingView
+                        </div>
+                        <script
+                          type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                          async
+                        >
+                          {
+                              "symbol": "BITSTAMP:LTCUSD",
+                              "width": "100%",
+                              "height": "100%",
+                              "locale": "es",
+                              "dateRange": "3m",
+                              "colorTheme": "light",
+                              "trendLineColor": "#37a6ef",
+                              "underLineColor": "#E3F2FD",
+                              "isTransparent": false,
+                              "autosize": true,
+                              "largeChartUrl": ""
+                          }
+                        </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <!-- end of slider item -->
+                  </div>
 
-                    </section>
+                  <!-- end of slider wrap-->
+                  <div class="slick_control_wrap text-center">
+                    <button
+                      data-aos="fade-right"
+                      type="button"
+                      class="ngu_control_button half-button charts-arrow-left leftRs btn btn-circle btn-white btn-shadow"
+                    >
+                      <i class="eva eva-chevron-left-outline"></i>
+                    </button>
+                    <button
+                      data-aos="fade-left"
+                      type="button"
+                      class="ngu_control_button half-button charts-arrow-right rightRs btn btn-circle btn-white btn-shadow"
+                    >
+                      <i class="eva eva-chevron-right-outline"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- start-features -->
+          <section id="features-wrap" class="features_wrap p-t-b-80">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 section-header mb-2">
+                  <h2 class="font-weight-bold">Caracteristicas</h2>
+                  <div
+                    class="separator mt-3 mb-3"
+                    style="width: 50px; border-bottom: 1px solid black;"
+                  ></div>
+                  <p>
+                    Conozca las caracteristicas que nuestro equipo de desarrollo
+                    ha implementado.
+                  </p>
+                </div>
+                <div class="col-12 mb-4 mb-lg-0 mt-3">
+                  <div class="row">
+                    <div data-aos="fade-right" class="col-md-4 col-sm-12 h-100">
+                      <div>
+                        <div class="card-body pt-4 pb-4 feature-item">
+                          <i class="eva eva-clock-outline text-36"></i>
+                          <h4 class="card-title pt-2 font-weight-medium">
+                            Rapidez
+                          </h4>
+                          <p>
+                            Movimientos se reflejan al instante.<br /><br /><br />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of left card col-6 -->
+                    <div data-aos="fade-left" class="col-md-4 col-sm-12">
+                      <div>
+                        <div class="card-body pt-4 pb-4 feature-item">
+                          <i class="eva eva-shopping-bag-outline text-36"></i>
+                          <h4 class="card-title pt-2 font-weight-medium">
+                            Flexibilidad
+                          </h4>
+                          <p>
+                            Nuestra moneda de respaldo COINBACK puede ser
+                            intercambiada por cualquier moneda.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of left card col-6 -->
+                    <div
+                      data-aos="fade-up"
+                      class="col-md-4 col-sm-12 mb-lg-0 mb-md-0"
+                    >
+                      <div>
+                        <div class="card-body pt-4 pb-4 feature-item">
+                          <i class="eva eva-lock-outline text-36"></i>
+                          <h4 class="card-title pt-2 font-weight-medium">
+                            Seguridad
+                          </h4>
+                          <p>
+                            Tecnología BLOCKCHAIN que permite que la plataforma
+                            sea 100% segura.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of left card col-6 -->
+                    <!-- <div data-aos="fade-up" class="col-md-6 col-sm-6 mb-4 mb-lg-0 mb-md-0">
+                                            <div>
 
-                    <!-- end::intro-section -->
-                    
-
-                    <!-- start-features -->
-                    <section id="features-wrap" class="features_wrap p-t-b-80">
-                        <div class="container">
-                            <div class="row">
-
-                                <div class="col-md-12 section-header mb-5">
-                                    <h2 class="font-weight-bold">Caracteristicas</h2>
-                                    <p>Conozca las caracteristicas que nuestro equipo de desarrollo ha implementado.</p>
-
-                                </div>
-
-                                <div class="col-md-12 col-lg-6 col-sm-12 mb-4 mb-lg-0">
-                                    <div class="row">
-
-
-                                        <div data-aos="fade-right" class="col-md-6 col-sm-6 mb-4 h-100">
-                                            <div class="card">
-
-                                                <div class="card-body pt-4 pb-4 text-center">
-                                                    <i class="eva eva-clock-outline text-36"></i>
-                                                    <h4 class="card-title pt-2 font-weight-medium">Rapidez</h4>
-                                                    <p>Movimientos se reflejan al instante.<br><br><br></p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end of left card col-6 -->
-                                        <div data-aos="fade-left" class="col-md-6 col-sm-6 mb-4">
-                                            <div class="card">
-
-                                                <div class="card-body pt-4 pb-4 text-center">
-                                                    <i class="eva eva-shopping-bag-outline text-36"></i>
-                                                    <h4 class="card-title pt-2 font-weight-medium">Flexibilidad</h4>
-                                                    <p>Nuestra moneda de respaldo COINBACK puede ser intercambiada por cualquier moneda.</p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end of left card col-6 -->
-                                        <div data-aos="fade-up" class="col-md-6 col-sm-6 mb-4 mb-lg-0 mb-md-0">
-                                            <div class="card">
-
-                                                <div class="card-body pt-4 pb-4 text-center">
-                                                    <i class="eva eva-lock-outline text-36"></i>
-                                                    <h4 class="card-title pt-2 font-weight-medium">Seguridad</h4>
-                                                    <p>Tecnología BLOCKCHAIN que permite que la plataforma sea 100% segura.</p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end of left card col-6 -->
-                                        <div data-aos="fade-up" class="col-md-6 col-sm-6 mb-4 mb-lg-0 mb-md-0">
-                                            <div class="card">
-
-                                                <div class="card-body pt-4 pb-4 text-center">
+                                                <div class="card-body pt-4 pb-4 text-left">
                                                     <i class="eva eva-people-outline text-36"></i>
                                                     <h4 class="card-title pt-2 font-weight-medium">Comunidad</h4>
                                                     <p>Escribe a todos tus amigos y animalos a usar Pago Linea.<br><br><br></p>
 
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- end of left card col-6 -->
-                                    </div>
-
-                                </div>
-                                <!-- end of col-6 -->
-                                <div class="col-md-12 col-sm-12 col-lg-5 offset-lg-1 d-flex align-items-center">
+                                        </div> -->
+                    <!-- end of left card col-6 -->
+                  </div>
+                </div>
+                <!-- end of col-6 -->
+                <!-- <div class="col-md-12 col-sm-12 col-lg-5 offset-lg-1 d-flex align-items-center">
 
                                     <img data-aos="fade-left" src="assets/images/landing/svg/features2.svg" class="img-responsive w-100" alt="">
-                                </div>
+                                </div> -->
+              </div>
+            </div>
+          </section>
+          <!-- end-features -->
 
-                            </div>
+          <!-- start-services -->
+          <section id="services-wrap" class="services-caurosel-wrap light-gray">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-sm-12 col-md-6 p-4 d-flex justify-content-center"
+                >
+                  <img
+                    src="https://www.bitstamp.net/s/webapp/images/landing/mobile-mock.png"
+                    alt=""
+                    class="landing-img-1 img-responsive"
+                  />
+                </div>
+                <div class="col-md-6 section-header mb-5">
+                  <h2 class="font-weight-bold section-title">
+                    Nuestros servicios
+                  </h2>
+                  <div
+                    class="separator mt-3 mb-3"
+                    style="width: 50px; border-bottom: 1px solid black;"
+                  ></div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia distinctio non blanditiis perspiciatis, dicta facere
+                    sapiente quidem ad id corporis, vel quo minus voluptate
+                    veniam, illo nulla accusamus cumque quasi.
+                  </p>
+                  <div class="mt-4 intro-ten-Buttons">
+                    <div class="container-responsive d-flex align-items-center">
+                      <a
+                        name=""
+                        href="https://app.pagolinea.com/pages/login"
+                        class="btn _round-button btn-primary btn-lg pl-5 pr-5 text-uppercase text-light"
+                        href="#"
+                        role="button"
+                      >
+                        Aprenda mas
+                      </a>
+                    </div>
+                    <div class="container-responsive download-container">
+                      <img
+                        class="img-responsive w-40"
+                        style="height: auto;"
+                        src="assets/images/google-play-badge.png"
+                        alt=""
+                      />
+                      <img
+                        class="img-responsive w-40"
+                        style="height: auto;"
+                        src="assets/images/appstore_es.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div data-aos="fade-up" class="slick-services-carousel-wrap">
+                    <!-- start slider item -->
+                    <div class="service-wrap">
+                      <div class="card o-hidden mb-4">
+                        <div class="card-header p-0 text-left">
+                          <img
+                            class="img-responsive"
+                            src="assets/images/landing/services/services-3.png"
+                          />
                         </div>
-                    </section>
-                    <!-- end-features -->
-
-                    <!-- start-services -->
-                    <section id="services-wrap" class="services-caurosel-wrap light-gray">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 section-header mb-5">
-                                    <h2 class="font-weight-bold">Nuestros servicios</h2>
-                                    <p>Conozca nuestros servicios que hemos desarrollado para que puedas tener mayor libertad en tus operaciones financieras.</p>
-
-                                </div>
-                                <div class="col-md-12">
-
-                                    <div data-aos="fade-up" class="slick-services-carousel-wrap">
-                                        <!-- start slider item -->
-                                        <div class="service-wrap">
-
-                                            <div class="card o-hidden mb-4">
-
-                                                <div class="card-header p-0 text-left">
-
-                                                    <img class="img-responsive" src="assets/images/landing/services/services-3.png">
-                                                </div>
-                                                <div class="card-body text-left">
-
-                                                    <h3 class="card-title text-capitalize font-weight-bold">Envios de Dinero
-                                                    </h3>
-                                                    <p class="card-text">Envie y reciba dinero desde cualquier parte del mundo en instantes.<br><br><br></p>
-                                                    <!-- <a href="#" class="text-primary text-capitalize font-weight-medium"> <span>Read More</span> </a> -->
-                                                </div>
-                                                <!-- <div class="card-footer pl-3 text-left">
+                        <div class="card-body text-left">
+                          <h3
+                            class="card-title text-capitalize font-weight-bold"
+                          >
+                            Envios de Dinero
+                          </h3>
+                          <p class="card-text">
+                            Envie y reciba dinero desde cualquier parte del
+                            mundo en instantes.<br /><br /><br />
+                          </p>
+                          <!-- <a href="#" class="text-primary text-capitalize font-weight-medium"> <span>Read More</span> </a> -->
+                        </div>
+                        <!-- <div class="card-footer pl-3 text-left">
                                                     <a href="#" class="btn btn-lg p-1 mr-1 text-dark">
                                                         <span class="eva eva-link-2-outline"></span>
                                                     </a>
@@ -290,11 +599,11 @@
                                                         <span class="eva eva-share"></span>
                                                     </a>
                                                 </div> -->
-                                            </div>
-                                        </div>
-                                        <!-- end of slider item -->
-                                        <!-- start slider item -->
-                                        <!-- <div class="service-wrap">
+                      </div>
+                    </div>
+                    <!-- end of slider item -->
+                    <!-- start slider item -->
+                    <!-- <div class="service-wrap">
 
                                             <div class="card o-hidden mb-4">
 
@@ -321,24 +630,29 @@
                                                 </div>
                                             </div>
                                         </div> -->
-                                        <!-- end of slider item -->
-                                        <!-- start slider item -->
-                                        <div class="service-wrap">
-
-                                            <div class="card o-hidden mb-4">
-
-                                                <div class="card-header p-0 text-left">
-
-                                                    <img class="img-responsive" src="assets/images/landing/services/services-2.png">
-                                                </div>
-                                                <div class="card-body text-left">
-
-                                                    <h3 class="card-title text-capitalize font-weight-bold">Compra y Venta de Crypto Monedas
-                                                    </h3>
-                                                    <p class="card-text">Compra y venta 100% segura de criptomonedas de pequeñas o grandes cantidades.</p>
-                                                    <!-- <a href="#" class="text-primary text-capitalize font-weight-medium"> <span>Read More</span> </a> -->
-                                                </div>
-                                                <!-- <div class="card-footer pl-3 text-left">
+                    <!-- end of slider item -->
+                    <!-- start slider item -->
+                    <div class="service-wrap">
+                      <div class="card o-hidden mb-4">
+                        <div class="card-header p-0 text-left">
+                          <img
+                            class="img-responsive"
+                            src="assets/images/landing/services/services-2.png"
+                          />
+                        </div>
+                        <div class="card-body text-left">
+                          <h3
+                            class="card-title text-capitalize font-weight-bold"
+                          >
+                            Compra y Venta de Crypto Monedas
+                          </h3>
+                          <p class="card-text">
+                            Compra y venta 100% segura de criptomonedas de
+                            pequeñas o grandes cantidades.
+                          </p>
+                          <!-- <a href="#" class="text-primary text-capitalize font-weight-medium"> <span>Read More</span> </a> -->
+                        </div>
+                        <!-- <div class="card-footer pl-3 text-left">
                                                     <a href="#" class="btn btn-lg p-1 mr-1 text-dark">
                                                         <span class="eva eva-link-2-outline"></span>
                                                     </a>
@@ -346,26 +660,31 @@
                                                         <span class="eva eva-share"></span>
                                                     </a>
                                                 </div> -->
-                                            </div>
-                                        </div>
-                                        <!-- end of slider item -->
-                                        <!-- start slider item -->
-                                        <div class="service-wrap">
-
-                                            <div class="card o-hidden mb-4">
-
-                                                <div class="card-header p-0 text-left">
-
-                                                    <img class="img-responsive" src="assets/images/landing/services/services-1.png">
-                                                </div>
-                                                <div class="card-body text-left">
-
-                                                    <h3 class="card-title text-capitalize font-weight-bold">Compra y Venta de Divisas
-                                                    </h3>
-                                                    <p class="card-text">Compre y venda sus divisas y recibalas en su cuenta bancaria o en nuestros puntos de recarga PagoLinea.</p>
-                                                    <!-- <a href="#" class="text-primary text-capitalize font-weight-medium"> <span>Read More</span> </a> -->
-                                                </div>
-                                                <!-- <div class="card-footer pl-3 text-left">
+                      </div>
+                    </div>
+                    <!-- end of slider item -->
+                    <!-- start slider item -->
+                    <div class="service-wrap">
+                      <div class="card o-hidden mb-4">
+                        <div class="card-header p-0 text-left">
+                          <img
+                            class="img-responsive"
+                            src="assets/images/landing/services/services-1.png"
+                          />
+                        </div>
+                        <div class="card-body text-left">
+                          <h3
+                            class="card-title text-capitalize font-weight-bold"
+                          >
+                            Compra y Venta de Divisas
+                          </h3>
+                          <p class="card-text">
+                            Compre y venda sus divisas y recibalas en su cuenta
+                            bancaria o en nuestros puntos de recarga PagoLinea.
+                          </p>
+                          <!-- <a href="#" class="text-primary text-capitalize font-weight-medium"> <span>Read More</span> </a> -->
+                        </div>
+                        <!-- <div class="card-footer pl-3 text-left">
                                                     <a href="#" class="btn btn-lg p-1 mr-1 text-dark">
                                                         <span class="eva eva-link-2-outline"></span>
                                                     </a>
@@ -373,26 +692,31 @@
                                                         <span class="eva eva-share"></span>
                                                     </a>
                                                 </div> -->
-                                            </div>
-                                        </div>
-                                        <!-- end of slider item -->
-                                        <!-- start slider item -->
-                                        <div class="service-wrap">
-
-                                            <div class="card o-hidden mb-4">
-
-                                                <div class="card-header p-0 text-left">
-
-                                                    <img class="img-responsive" src="assets/images/landing/services/services-4.png">
-                                                </div>
-                                                <div class="card-body text-left">
-
-                                                    <h3 class="card-title text-capitalize font-weight-bold">Pago de Productos
-                                                    </h3>
-                                                    <p class="card-text">Permitale a los clientes de su negocio pagar con la plataforma que ya todos utilizan, PagoLinea.</p>
-                                                    <!-- <a href="#" class="text-primary text-capitalize font-weight-medium"> <span>Read More</span> </a> -->
-                                                </div>
-                                                <!-- <div class="card-footer pl-3 text-left">
+                      </div>
+                    </div>
+                    <!-- end of slider item -->
+                    <!-- start slider item -->
+                    <div class="service-wrap">
+                      <div class="card o-hidden mb-4">
+                        <div class="card-header p-0 text-left">
+                          <img
+                            class="img-responsive"
+                            src="assets/images/landing/services/services-4.png"
+                          />
+                        </div>
+                        <div class="card-body text-left">
+                          <h3
+                            class="card-title text-capitalize font-weight-bold"
+                          >
+                            Pago de Productos
+                          </h3>
+                          <p class="card-text">
+                            Permitale a los clientes de su negocio pagar con la
+                            plataforma que ya todos utilizan, PagoLinea.
+                          </p>
+                          <!-- <a href="#" class="text-primary text-capitalize font-weight-medium"> <span>Read More</span> </a> -->
+                        </div>
+                        <!-- <div class="card-footer pl-3 text-left">
                                                     <a href="#" class="btn btn-lg p-1 mr-1 text-dark">
                                                         <span class="eva eva-link-2-outline"></span>
                                                     </a>
@@ -400,11 +724,11 @@
                                                         <span class="eva eva-share"></span>
                                                     </a>
                                                 </div> -->
-                                            </div>
-                                        </div>
-                                        <!-- end of slider item -->
-                                        <!-- start slider item -->
-                                        <!-- <div class="service-wrap">
+                      </div>
+                    </div>
+                    <!-- end of slider item -->
+                    <!-- start slider item -->
+                    <!-- <div class="service-wrap">
 
                                             <div class="card o-hidden mb-4">
 
@@ -431,113 +755,140 @@
                                                 </div>
                                             </div>
                                         </div> -->
-                                        <!-- end of slider item -->
+                    <!-- end of slider item -->
+                  </div>
 
+                  <!-- end of slider wrap-->
+                  <div class="slick_control_wrap text-center">
+                    <button
+                      data-aos="fade-right"
+                      type="button"
+                      class="ngu_control_button half-button services-arrow-left leftRs btn btn-circle btn-white btn-shadow"
+                    >
+                      <i class="eva eva-chevron-left-outline"></i>
+                    </button>
+                    <button
+                      data-aos="fade-left"
+                      type="button"
+                      class="ngu_control_button half-button services-arrow-right rightRs btn btn-circle btn-white btn-shadow"
+                    >
+                      <i class="eva eva-chevron-right-outline"></i>
+                    </button>
+                  </div>
+                  <!-- end of slider button -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end-services -->
 
-                                    </div>
+          <!-- best -->
+          <section
+            class="best-wrap pb-80 bg-primary text-light"
+            id="extra-feature-wrap"
+          >
+            <div class="container m-condensed">
+              <div class="row">
+                <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+                  <img
+                    src="https://www.bitstamp.net/s/webapp/images/landing/tradeview-mock-m.png"
+                    alt=""
+                    class="landing-img-1"
+                  />
+                </div>
+                <div class="col-sm-12 col-md-6 mt-5">
+                  <div class="section-header mb-5">
+                    <h2 class="font-weight-bold section-title">
+                      Estamos contigo
+                    </h2>
+                    <div
+                      class="separator mt-3 mb-3"
+                      style="width: 50px; border-bottom: 1px solid white;"
+                    ></div>
+                    <p>
+                      Estas son las COINBACKS que actualmente se encuentran
+                      disponible.
+                    </p>
+                  </div>
 
-                                    <!-- end of slider wrap-->
-                                    <div class="slick_control_wrap text-center">
+                  <div data-aos="fade-right" class="mb-4">
+                    <div class="o-hidden text-left">
+                      <div class="p-0 mb-3">
+                        <h2 class="sub-title">
+                          PROFFESIONAL ACCESS, NON STOP AVAILABILITY
+                        </h2>
+                      </div>
+                      <div class="card-body p-0">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Minima sint ea facilis excepturi labore,
+                          similique praesentium asperiores. Earum sequi,
+                          molestias expedita temporibus corporis nisi laborum
+                          veritatis labore eos at ullam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of col -->
+                  <div data-aos="fade-left" class="mb-4">
+                    <div class="o-hidden text-left">
+                      <div class="p-0 mb-3">
+                        <h2 class="sub-title">
+                          PROFFESIONAL ACCESS, NON STOP AVAILABILITY
+                        </h2>
+                      </div>
+                      <div class="card-body p-0">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Minima sint ea facilis excepturi labore,
+                          similique praesentium asperiores. Earum sequi,
+                          molestias expedita temporibus corporis nisi laborum
+                          veritatis labore eos at ullam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of col -->
+                  <div data-aos="fade-up" class="mb-4 mb-lg-0 mb-md-0">
+                    <div class="o-hidden text-left">
+                      <div class="p-0 mb-3">
+                        <h2 class="sub-title">
+                          PROFFESIONAL ACCESS, NON STOP AVAILABILITY
+                        </h2>
+                      </div>
+                      <div class="card-body p-0">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Minima sint ea facilis excepturi labore,
+                          similique praesentium asperiores. Earum sequi,
+                          molestias expedita temporibus corporis nisi laborum
+                          veritatis labore eos at ullam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    name=""
+                    href="https://app.pagolinea.com/pages/login"
+                    class="w-100 btn _round-button btn-white btn-lg pl-5 pr-5 pb-2 mr-2 mb-3 text-uppercase"
+                    href="#"
+                    role="button"
+                  >
+                    More for pro traders
+                  </a>
+                  <a
+                    name=""
+                    href="https://app.pagolinea.com/pages/login"
+                    class="w-100 btn _round-button btn-outline-white btn-lg pl-5 pr-5 pb-2 mr-2 mt-3 text-uppercase"
+                    href="#"
+                    role="button"
+                  >
+                    Get started
+                  </a>
+                </div>
 
-
-                                        <button data-aos="fade-right" type="button" class="ngu_control_button half-button services-arrow-left leftRs btn btn-circle btn-white btn-shadow"><i class="eva eva-chevron-left-outline"></i></button>
-                                        <button data-aos="fade-left" type="button" class="ngu_control_button half-button services-arrow-right rightRs btn btn-circle btn-white btn-shadow"><i class="eva eva-chevron-right-outline"></i></button>
-                                    </div>
-                                    <!-- end of slider button -->
-
-
-
-
-
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </section>
-                    <!-- end-services -->
-
-
-
-                    <!-- best -->
-                    <section class="best-wrap p-t-b-80 light-gray" id="extra-feature-wrap">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 section-header mb-5">
-                                    <h2 class="font-weight-bold">Estamos contigo</h2>
-                                    <p>Estas son las COINBACKS que actualmente se encuentran disponible.</p>
-
-                                </div>
-
-                                <div data-aos="fade-right" class="col-md-6 mb-4">
-                                    <div class="card o-hidden text-left">
-
-                                        <div class="card-body">
-                                            <div class="left_icon float-left w-20 p-3 text-center">
-                                                <img src="assets/images/products/usd-curr.png" style="max-width: 190%; transform: translateX(-30px);" alt="">
-                                            </div>
-                                            <div class="right_content w-70 float-left p-3">
-                                                <h4 class="card-title font-weight-bold">ESTADOS UNIDOS</h4>
-                                                <p class="card-text">
-                                                    <ul class="list-inline">
-                                                        <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>
-                                                           Dolar Estadounidense
-                                                        </li>
-                                                    </ul>
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of col -->
-                                <div data-aos="fade-left" class="col-md-6 mb-4">
-                                    <div class="card o-hidden text-left">
-
-                                        <div class="card-body">
-                                            <div class="left_icon float-left w-20 p-3 text-center">
-                                                <img src="assets/images/products/co-curr.png" style="max-width: 190%; transform: translateX(-30px);" alt="">
-                                            </div>
-                                            <div class="right_content w-70 float-left p-3">
-                                                <h4 class="card-title font-weight-bold">COLOMBIA</h4>
-                                                <p class="card-text">
-                                                    <ul class="list-inline">
-                                                        <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>
-                                                           Peso Colombiano
-                                                        </li>
-                                                    </ul>
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of col -->
-                                <div data-aos="fade-up" class="col-md-6 mb-4 mb-lg-0 mb-md-0">
-                                    <div class="card o-hidden text-left">
-
-                                        <div class="card-body">
-                                            <div class="left_icon float-left w-20 p-3 text-center">
-                                                <img src="assets/images/products/ar-curr.png" style="max-width: 190%; transform: translateX(-30px);" alt="">
-                                            </div>
-                                            <div class="right_content w-70 float-left p-3">
-                                                <h4 class="card-title font-weight-bold">ARGENTINA</h4>
-                                                <p class="card-text">
-                                                    <ul class="list-inline">
-                                                        <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>
-                                                           Peso Argentino
-                                                        </li>
-                                                    </ul>
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of col -->
-                                <div data-aos="fade-up" class="col-md-6 mb-lg-0 mb-md-0">
+                <!-- end of col -->
+                <!-- <div data-aos="fade-up" class="col-md-6 mb-lg-0 mb-md-0">
                                     <div class="card o-hidden text-left">
 
                                         <div class="card-body">
@@ -557,421 +908,571 @@
 
                                         </div>
                                     </div>
-                                </div>
-                                <!-- end of col -->
-                            </div>
-                        </div>
-                    </section>
-                    <!-- end::best -->
-
-                    <!-- start::left-img -->
-                    <section class="left-image-wrap p-t-b-80">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 section-header mb-5">
-                                    <h2 class="font-weight-bold">Descarga nuestra APP</h2>
-                                    <p>Estamos trabajando para garantizarte la mejor experiencia de mover dinero a tráves de nuestra aplicación movil.</p>
-
-                                </div>
-                                <div class="col-md-6 col-sm-12 mb-5 mb-lg-0 mb-md-0 mt-mb-5">
-
-
-
-                                    <div class="left-image-carousel mb-5">
-                                        <div class="d-flex justify-content-center">
-                                            <img alt="Card image cap" class="img-responsive mb-4" src="assets/images/landing/app_screenshots/ss-1.png">
-                                        </div>
-                                        <div class="d-flex justify-content-center">
-                                            <img alt="Card image cap" class="img-responsive mb-4" src="assets/images/landing/app_screenshots/ss-2.png">
-                                        </div>
-                                        <div class="d-flex justify-content-center">
-                                            <img alt="Card image cap" class="img-responsive mb-4" src="assets/images/landing/app_screenshots/ss-3.png">
-                                        </div>
-                                        <div class="d-flex justify-content-center"><img alt="Card image cap" class="img-responsive mb-4" src="assets/images/landing/app_screenshots/ss-4.png"></div>
-                                        
-                                    </div>
-                                    <div class="slick_control_wrap text-center">
-
-
-                                        <button type="button" class="ngu_control_button half-button leftRs btn btn-circle btn-white btn-shadow"><i class="eva eva-chevron-left-outline"></i></button>
-                                        <button type="button" class="ngu_control_button half-button rightRs btn btn-circle btn-white btn-shadow"><i class="eva eva-chevron-right-outline"></i></button>
-                                    </div>
-
-                                </div>
-
-
-
-                                <div class="col-md-5 offset-md-1 col-sm-12">
-                                    <div class="row">
-
-
-                                        <div data-aos="fade-left" class="col-md-12 col-sm-6 mb-4">
-                                            <div class="card">
-
-                                                <div class="card-body pt-3 pb-3">
-
-                                                    <h4 class="card-title font-weight-bold">Compra Y Venta De Divisas
-                                                    </h4>
-                                                    <p class="m-0">Compre y venda sus divisas y recibalas en su cuenta bancaria o en nuestros puntos de recarga PagoLinea.</p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end of col  -->
-                                        <div data-aos="fade-right" class="col-md-12 col-sm-6 mb-4">
-                                            <div class="card">
-
-                                                <div class="card-body pt-3 pb-3">
-
-                                                    <h4 class="card-title font-weight-bold">Envios De Dinero
-                                                    </h4>
-                                                    <p class="m-0">Envie y reciba dinero desde cualquier parte del mundo en un instante.</p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end of col  -->
-                                        <div data-aos="fade-up" class="col-md-12 col-sm-6 mb-lg-0 mb-md-0 mb-sm-0">
-                                            <div class="card">
-
-                                                <div class="card-body pt-3 pb-3">
-
-                                                    <h4 class="card-title font-weight-bold">Compra y Venta de Crypto Monedas</h4>
-                                                    <p class="m-0">Compra y venta 100% segura de criptomonedas de pequeñas o grandes cantidades.</p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end of col  -->
-                                    </div>
-                                </div>
-                                <!-- end of col6 row -->
-                            </div>
-                        </div>
-                    </section>
-                    <!-- end::left-img -->
-
-
-
-
-
-                    <!-- start::faq -->
-                    <section class="faqs-wrap p-t-b-80" id="faqs-wrap">
-                        <div class="container">
-                            <div class="row">
-
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12 mb-4 mb-lg-0 mb-md-0 mb-4">
-                                    <div class="section-header mb-5">
-                                        <h2 class="font-weight-bold">Preguntas Frecuentes</h2>
-                                        <p>Estas son las preguntas mas frecuentes que nos realizan.</p>
-
-                                    </div>
-                                    <div class="accordion" id="accordionExample">
-                                        <div class="card ul-card__border-radius" data-toggle="collapse" href="#accordion-item-group1">
-                                            <div class="card-header">
-                                                <h6 class="card-title mb-0">
-                                                    <a  class="text-default">¿La tasa de envío a países como Venezuela y Colombia son fijas o variables?</a>
-                                                </h6>
-                                            </div>
-
-                                            <div id="accordion-item-group1" class="collapse show" data-parent="#accordionExample">
-                                                <div class="card-body">
-                                                    Las tasas que maneja PagoLinea son variables, por lo tanto, cuando la moneda central baja la tasa en forma dinámica también baja, permitiendo que puedas pagar menos y enviar más.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card ul-card__border-radius">
-                                            <div class="card-header"  data-toggle="collapse" href="#accordion-item-group2">
-                                                <h6 class="card-title mb-0">
-                                                    <a class="collapsed text-default">Mis clientes pueden pagar por mis productos con BITCOIN, ¿Cómo puedo hacerlo con PagoLinea?</a>
-                                                </h6>
-                                            </div>
-
-                                            <div id="accordion-item-group2" class="collapse" data-parent="#accordionExample">
-                                                <div class="card-body">
-                                                    Somos una nueva plataforma digital y descentralizada diferente a lo cotidianos y/o comunes medios de pago, somos más segura, dinámica, rápida y eficiente ya que nuestros canales son instantáneos.
-En el pie de página podrás encontrar un formulario para solicitar una asesoría personalizada para PagoLineaBusiness
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card ul-card__border-radius">
-                                            <div class="card-header" data-toggle="collapse" href="#accordion-item-default3">
-                                                <h6 class="card-title mb-0">
-                                                    <a class="collapsed text-default">¡Quiero comprar criptomonedas pero no sé como hacerlo!</a>
-                                                </h6>
-                                            </div>
-
-                                            <div id="accordion-item-default3" class="collapse" data-parent="#accordionExample">
-                                                <div class="card-body">
-                                                    Contamos con un equipo de servicio al cliente y soporte que esta disponible al instante; el cual te explica de forma detallada y personalizada cómo generar tu compra para luego tener disponibles tus criptomonedas en PagoLinea APP o PagoLinea Plataform.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of col -->
-                                <div data-aos="fade-left" class="col-md-5 offset-md-1 col-sm-12 d-flex align-items-center">
-
-                                    <img src="assets/images/landing/svg/faqs2.svg" class="img-responsive w-100" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-                    <!-- end::faq -->
-
-
-
-                    <!-- start::contact-form -->
-                    <section id="contacts-wrap" class="contact-form-wrap light-gray p-t-b-80">
-                        <div class="container">
-                            <div class="row">
-
-
-
-                                <div data-aos="fade-right" class="form-wrap col-md-6 mb-4">
-                                    <div class="section-header mb-5">
-                                        <h2 class="font-weight-bold">Utiliza nuestra billetera digital para tu negocio</h2>
-                                        <p>Cientos de miles de negocios alrededor del mundo se estan sumando a utilizar medios de pago a base de criptomonedas.
-                                            Dejanos tus datos para enviarte mayor informacion.
-                                        </p>
-
-                                    </div>
-                                    <div id="success-send" class="alert alert-success alert-dismissible fade show" role="alert" [@animate]="{value:'*',params:{y:'-120px',opacity:'0',delay:'100ms', duration: '400ms'}}">
-                                        <button type="button" class="close" onclick="$('#success-send').hide()">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        <strong>Recibimos tu mensaje...Nos contactaremos contigo en instantes.</strong>
-                                    </div>
-                                    <div id="fail-send" class="alert alert-danger alert-dismissible fade show" role="alert" [@animate]="{value:'*',params:{y:'-120px',opacity:'0',delay:'100ms', duration: '400ms'}}">
-                                        <button type="button" class="close" onclick="$('#fail-send').hide()">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        <strong>Ha ocurrido un error al enviar el mensaje, Intente mas tarde.</strong>
-                                    </div>
-
-                                    <form class="row form" role="form" id="contactForm">
-                                        <div class="form-group mb-4 col-md-6">
-                                            <label for="">
-                                                <i class="eva eva-person-outline"></i>
-                                            </label>
-                                            <input type="text" name="Name"  class="form-control" placeholder="Tu Nombre" required>
-
-                                        </div>
-                                        <div class="form-group mb-4 col-md-6">
-                                            <label for="">
-                                                <i class="eva eva-email-outline"></i>
-                                            </label>
-                                            <input type="email" required name="email" class="form-control" placeholder="Tu Email" aria-describedby="helpId">
-
-                                        </div>
-                                        <div class="form-group mb-4 col-md-12">
-                                            <label for="">
-                                                <i class="eva eva-edit-2-outline"></i>
-                                            </label>
-                                            <input type="text" required name="subject" class="form-control" placeholder="Asunto" aria-describedby="helpId">
-
-                                        </div>
-
-                                        <div class="form-group mb-4 col-md-12">
-
-                                            <label for="">
-                                                <i class="eva eva-edit-outline"></i>
-                                            </label>
-                                            <textarea class="form-control" placeholder="Tu mensaje aqui" required name="message" rows="5"></textarea>
-
-
-                                        </div>
-
-                                        <div class="form-group col-md-12">
-                                            <button type="submit" class="btn btn-block half-button form-submit-button btn-large btn-gradient">Enviar
-                                            </button>
-
-                                        </div>
-
-
-
-                                    </form>
-
-
-
-                                </div>
-                                <div data-aos="fade-left" class="col-md-6 d-flex align-items-center justify-content-center">
-                                    <div class="right-contact-wrap">
-
-                                        <img src="assets/images/landing/lOGO_d/pl-high-res.png" class="img-responsive zoom-fade" alt="Image">
-
-                                        <!-- <div class="address-wrap mb-4">-->
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- end::contact-form -->
-
-                    <!-- Footer Start -->
-                    <div class="flex-grow-1"></div>
-
-
-                    <section class="footer_wrap" id="footer-wrap">
-                        <div class="container">
-                            <div class="row">
-
-
-                                <div data-aos="fade-up" class="col-md-3 mb-4">
-                                    <div class="o-hidden text-left">
-
-
-
-                                        <div class="">
-                                            <h4 class="card-title font-weight-bold">Pago Linea</h4>
-                                            <p class="">Pago Linea es una empresa...
-                                            </p>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <!-- end of col -->
-                                <div data-aos="fade-up" class="col-md-3 mb-4">
-                                    <div class="o-hidden text-left">
-
-
-
-                                        <div class="">
-                                            <h4 class="card-title font-weight-bold">Paginas</h4>
-                                            <div class="mb-5 lead">
-                                                <ul class="list-inline">
-                                                    <li class="mb-3"> <a href="terms.html">Terminos y condiciones</a></li>
-                                                    <!-- <li class="mb-3"><a href="policies.html">Politicas de privacidad</a></li> -->
-                                                </ul>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <!-- end of col -->
-                                <div data-aos="fade-up" class="col-md-3 mb-4 mb-lg-0 mb-md-0">
-                                    <div class="o-hidden text-left">
-
-                                        <div class="">
-                                            <h4 class="card-title font-weight-bold">Caracteristicas</h4>
-                                            <div class="mb-5 lead">
-                                                <ul class="list-inline">
-                                                    <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>Facil de Usar
-                                                    </li>
-                                                    <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>Segura
-                                                    </li>
-
-
-                                                    <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>
-                                                       Confiable
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of col -->
-                                <div data-aos="fade-up" class="col-md-3 mb-lg-0 mb-md-0">
-                                    <div class="o-hidden text-left">
-
-                                        <div class="">
-                                            <h4 class="card-title font-weight-bold">Informacion de contacto</h4>
-                                            <div class="address-wrap mb-3">
-
-                                                <ul class="list-group list-unstyled">
-                                                    <li class=""> <i class="eva eva-pin-outline mr-2"></i>Buenos Aires, Argentina
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                            <div class="address-wrap mb-3">
-
-                                                <ul class="list-group list-unstyled">
-                                                    <li class=""><i class="eva eva-email-outline mr-2"></i>info@pagolinea.com
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-
-                                            <div class="address-wrap mb-3">
-
-                                                <ul class="list-group list-unstyled">
-                                                    <li class=""><i class="eva eva-phone-call-outline mr-2"></i>
-                                                        +541256465
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-
-
-                                            <section class="social-wrap">
-
-                                                <div class="social-btns-wrap">
-
-                                                    <a class="social-btn text-30 facebook ml-0" target="_blank" href="https://www.facebook.com/pagolinea.arg/?view_public_for=113671090077524"><i class="eva eva-facebook"></i></a>
-
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of col -->
-                            </div>
-                        </div>
-                    </section>
-                    <!-- end footer -->
-
-                </div>
-                <!-- ============ Main content End ============= -->
-
-
-
-
+                                </div> -->
+                <!-- end of col -->
+              </div>
             </div>
+          </section>
+          <!-- end::best -->
+
+          <!-- start::left-img -->
+          <section class="left-image-wrap pb-80 bg-dark text-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-md-6 d-flex justify-content-center">
+                  <img
+                    src="https://www.bitstamp.net/s/webapp/images/landing/cc-mock-m.png"
+                    alt=""
+                    class="landing-img-1"
+                  />
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="section-header mb-5 mt-5">
+                    <h2 class="font-weight-bold section-title">
+                      Descarga nuestra APP
+                    </h2>
+                    <div
+                      class="separator mt-3 mb-3"
+                      style="width: 50px; border-bottom: 1px solid white;"
+                    ></div>
+                    <p>
+                      Estamos trabajando para garantizarte la mejor experiencia
+                      de mover dinero a tráves de nuestra aplicación movil.
+                    </p>
+                  </div>
+                  <div data-aos="fade-right" class="mb-4">
+                    <div class="o-hidden text-left">
+                      <div class="p-0 mb-3">
+                        <h2 class="sub-title">
+                          PROFFESIONAL ACCESS, NON STOP AVAILABILITY
+                        </h2>
+                      </div>
+                      <div class="card-body p-0">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Minima sint ea facilis excepturi labore,
+                          similique praesentium asperiores. Earum sequi,
+                          molestias expedita temporibus corporis nisi laborum
+                          veritatis labore eos at ullam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of col -->
+                  <div data-aos="fade-left" class="mb-4">
+                    <div class="o-hidden text-left">
+                      <div class="p-0 mb-3">
+                        <h2 class="sub-title">
+                          PROFFESIONAL ACCESS, NON STOP AVAILABILITY
+                        </h2>
+                      </div>
+                      <div class="card-body p-0">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Minima sint ea facilis excepturi labore,
+                          similique praesentium asperiores. Earum sequi,
+                          molestias expedita temporibus corporis nisi laborum
+                          veritatis labore eos at ullam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of col -->
+                  <div data-aos="fade-right" class="mb-4 mb-lg-0 mb-md-0">
+                    <div class="o-hidden text-left">
+                      <div class="p-0 mb-3">
+                        <h2 class="sub-title">
+                          PROFFESIONAL ACCESS, NON STOP AVAILABILITY
+                        </h2>
+                      </div>
+                      <div class="card-body p-0">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Minima sint ea facilis excepturi labore,
+                          similique praesentium asperiores. Earum sequi,
+                          molestias expedita temporibus corporis nisi laborum
+                          veritatis labore eos at ullam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    name=""
+                    href="https://app.pagolinea.com/pages/login"
+                    class="w-100 btn _round-button btn-white btn-lg pl-5 pr-5 pb-2 mt-4 mr-2 mb-3 text-uppercase"
+                    href="#"
+                    role="button"
+                  >
+                    More for pro traders
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-5 mb-lg-0 mb-md-0 mt-mb-5">
+                  <!-- Carousel Start-->
+                  <!-- <div class="left-image-carousel mb-5">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        alt="Card image cap"
+                        class="img-responsive mb-4"
+                        src="assets/images/landing/app_screenshots/ss-1.png"
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <img
+                        alt="Card image cap"
+                        class="img-responsive mb-4"
+                        src="assets/images/landing/app_screenshots/ss-2.png"
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <img
+                        alt="Card image cap"
+                        class="img-responsive mb-4"
+                        src="assets/images/landing/app_screenshots/ss-3.png"
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <img
+                        alt="Card image cap"
+                        class="img-responsive mb-4"
+                        src="assets/images/landing/app_screenshots/ss-4.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="slick_control_wrap text-center">
+                    <button
+                      type="button"
+                      class="ngu_control_button half-button leftRs btn btn-circle btn-white btn-shadow"
+                    >
+                      <i class="eva eva-chevron-left-outline"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="ngu_control_button half-button rightRs btn btn-circle btn-white btn-shadow"
+                    >
+                      <i class="eva eva-chevron-right-outline"></i>
+                    </button>
+                  </div> -->
+                  <!-- Carousel End -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end::left-img -->
+
+          <!-- start::faq -->
+          <section class="faqs-wrap p-t-b-80" id="faqs-wrap">
+            <div class="container">
+              <div class="row"></div>
+
+              <div class="row">
+                <div class="col-md-6 col-sm-12 mb-4 mb-lg-0 mb-md-0 mb-4">
+                  <div class="section-header mb-5">
+                    <h2 class="font-weight-bold">Preguntas Frecuentes</h2>
+                    <p>
+                      Estas son las preguntas mas frecuentes que nos realizan.
+                    </p>
+                  </div>
+                  <div class="accordion" id="accordionExample">
+                    <div
+                      class="card ul-card__border-radius"
+                      data-toggle="collapse"
+                      href="#accordion-item-group1"
+                    >
+                      <div class="card-header">
+                        <h6 class="card-title mb-0">
+                          <a class="text-default"
+                            >¿La tasa de envío a países como Venezuela y
+                            Colombia son fijas o variables?</a
+                          >
+                        </h6>
+                      </div>
+
+                      <div
+                        id="accordion-item-group1"
+                        class="collapse show"
+                        data-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          Las tasas que maneja PagoLinea son variables, por lo
+                          tanto, cuando la moneda central baja la tasa en forma
+                          dinámica también baja, permitiendo que puedas pagar
+                          menos y enviar más.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card ul-card__border-radius">
+                      <div
+                        class="card-header"
+                        data-toggle="collapse"
+                        href="#accordion-item-group2"
+                      >
+                        <h6 class="card-title mb-0">
+                          <a class="collapsed text-default"
+                            >Mis clientes pueden pagar por mis productos con
+                            BITCOIN, ¿Cómo puedo hacerlo con PagoLinea?</a
+                          >
+                        </h6>
+                      </div>
+
+                      <div
+                        id="accordion-item-group2"
+                        class="collapse"
+                        data-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          Somos una nueva plataforma digital y descentralizada
+                          diferente a lo cotidianos y/o comunes medios de pago,
+                          somos más segura, dinámica, rápida y eficiente ya que
+                          nuestros canales son instantáneos. En el pie de página
+                          podrás encontrar un formulario para solicitar una
+                          asesoría personalizada para PagoLineaBusiness
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card ul-card__border-radius">
+                      <div
+                        class="card-header"
+                        data-toggle="collapse"
+                        href="#accordion-item-default3"
+                      >
+                        <h6 class="card-title mb-0">
+                          <a class="collapsed text-default"
+                            >¡Quiero comprar criptomonedas pero no sé como
+                            hacerlo!</a
+                          >
+                        </h6>
+                      </div>
+
+                      <div
+                        id="accordion-item-default3"
+                        class="collapse"
+                        data-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          Contamos con un equipo de servicio al cliente y
+                          soporte que esta disponible al instante; el cual te
+                          explica de forma detallada y personalizada cómo
+                          generar tu compra para luego tener disponibles tus
+                          criptomonedas en PagoLinea APP o PagoLinea Plataform.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of col -->
+                <div
+                  data-aos="fade-left"
+                  class="col-md-5 offset-md-1 col-sm-12 d-flex align-items-center"
+                >
+                  <img
+                    src="assets/images/landing/svg/faqs2.svg"
+                    class="img-responsive w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end::faq -->
+
+          <!-- start::contact-form -->
+          <section
+            id="contacts-wrap"
+            class="contact-form-wrap light-gray p-t-b-80"
+          >
+            <div class="container">
+              <div class="row">
+                <div data-aos="fade-right" class="form-wrap col-md-6 mb-4">
+                  <div class="section-header mb-5">
+                    <h2 class="font-weight-bold">
+                      Utiliza nuestra billetera digital para tu negocio
+                    </h2>
+                    <p>
+                      Cientos de miles de negocios alrededor del mundo se estan
+                      sumando a utilizar medios de pago a base de criptomonedas.
+                      Dejanos tus datos para enviarte mayor informacion.
+                    </p>
+                  </div>
+                  <div
+                    id="success-send"
+                    class="alert alert-success alert-dismissible fade show"
+                    role="alert"
+                    [@animate]="{value:'*',params:{y:'-120px',opacity:'0',delay:'100ms', duration: '400ms'}}"
+                  >
+                    <button
+                      type="button"
+                      class="close"
+                      onclick="$('#success-send').hide()"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong
+                      >Recibimos tu mensaje...Nos contactaremos contigo en
+                      instantes.</strong
+                    >
+                  </div>
+                  <div
+                    id="fail-send"
+                    class="alert alert-danger alert-dismissible fade show"
+                    role="alert"
+                    [@animate]="{value:'*',params:{y:'-120px',opacity:'0',delay:'100ms', duration: '400ms'}}"
+                  >
+                    <button
+                      type="button"
+                      class="close"
+                      onclick="$('#fail-send').hide()"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong
+                      >Ha ocurrido un error al enviar el mensaje, Intente mas
+                      tarde.</strong
+                    >
+                  </div>
+
+                  <form class="row form" role="form" id="contactForm">
+                    <div class="form-group mb-4 col-md-6">
+                      <label for="">
+                        <i class="eva eva-person-outline"></i>
+                      </label>
+                      <input
+                        type="text"
+                        name="Name"
+                        class="form-control"
+                        placeholder="Tu Nombre"
+                        required
+                      />
+                    </div>
+                    <div class="form-group mb-4 col-md-6">
+                      <label for="">
+                        <i class="eva eva-email-outline"></i>
+                      </label>
+                      <input
+                        type="email"
+                        required
+                        name="email"
+                        class="form-control"
+                        placeholder="Tu Email"
+                        aria-describedby="helpId"
+                      />
+                    </div>
+                    <div class="form-group mb-4 col-md-12">
+                      <label for="">
+                        <i class="eva eva-edit-2-outline"></i>
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        name="subject"
+                        class="form-control"
+                        placeholder="Asunto"
+                        aria-describedby="helpId"
+                      />
+                    </div>
+
+                    <div class="form-group mb-4 col-md-12">
+                      <label for="">
+                        <i class="eva eva-edit-outline"></i>
+                      </label>
+                      <textarea
+                        class="form-control"
+                        placeholder="Tu mensaje aqui"
+                        required
+                        name="message"
+                        rows="5"
+                      ></textarea>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                      <button
+                        type="submit"
+                        class="btn btn-block half-button form-submit-button btn-large btn-gradient"
+                      >
+                        Enviar
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  data-aos="fade-left"
+                  class="col-md-6 d-flex align-items-center justify-content-center"
+                >
+                  <div class="right-contact-wrap">
+                    <img
+                      src="assets/images/landing/lOGO_d/logo-cb.png"
+                      class="img-responsive zoom-fade"
+                      alt="Image"
+                    />
+
+                    <!-- <div class="address-wrap mb-4">-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- end::contact-form -->
+
+          <!-- Footer Start -->
+          <div class="flex-grow-1"></div>
+
+          <section class="footer_wrap" id="footer-wrap">
+            <div class="container">
+              <div class="row">
+                <div data-aos="fade-up" class="col-md-3 mb-4">
+                  <div class="o-hidden text-left">
+                    <div class="">
+                      <h4 class="card-title font-weight-bold">
+                        Coinback &copy;
+                      </h4>
+                      <p class="">Todos los derechos reservados.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of col -->
+                <div data-aos="fade-up" class="col-md-3 mb-4">
+                  <div class="o-hidden text-left">
+                    <div class="">
+                      <h4 class="card-title font-weight-bold">Paginas</h4>
+                      <div class="mb-5 lead">
+                        <ul class="list-inline">
+                          <li class="mb-3">
+                            <a href="terms.html">Terminos y condiciones</a>
+                          </li>
+                          <!-- <li class="mb-3"><a href="policies.html">Politicas de privacidad</a></li> -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of col -->
+                <div data-aos="fade-up" class="col-md-3 mb-4 mb-lg-0 mb-md-0">
+                  <div class="o-hidden text-left">
+                    <div class="">
+                      <h4 class="card-title font-weight-bold">
+                        Caracteristicas
+                      </h4>
+
+                      <div
+                        class="separator mt-3 mb-3"
+                        style="width: 50px; border-bottom: 1px solid black;"
+                      ></div>
+                      <div class="mb-5 lead">
+                        <ul class="list-inline">
+                          <li class="mb-3">
+                            <i
+                              class="eva eva-checkmark-outline mr-2 text-warning"
+                            ></i
+                            >Facil de Usar
+                          </li>
+                          <li class="mb-3">
+                            <i
+                              class="eva eva-checkmark-outline mr-2 text-warning"
+                            ></i
+                            >Segura
+                          </li>
+
+                          <li class="mb-3">
+                            <i
+                              class="eva eva-checkmark-outline mr-2 text-warning"
+                            ></i>
+                            Confiable
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of col -->
+                <div data-aos="fade-up" class="col-md-3 mb-lg-0 mb-md-0">
+                  <div class="o-hidden text-left">
+                    <div class="">
+                      <h4 class="card-title font-weight-bold">
+                        Informacion de contacto
+                      </h4>
+                      <div class="address-wrap mb-3">
+                        <ul class="list-group list-unstyled">
+                          <li class="">
+                            <i class="eva eva-pin-outline mr-2"></i>Buenos
+                            Aires, Argentina
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="address-wrap mb-3">
+                        <ul class="list-group list-unstyled">
+                          <li class="">
+                            <i class="eva eva-email-outline mr-2"></i
+                            >info@pagolinea.com
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="address-wrap mb-3">
+                        <ul class="list-group list-unstyled">
+                          <li class="">
+                            <i class="eva eva-phone-call-outline mr-2"></i>
+                            +541256465
+                          </li>
+                        </ul>
+                      </div>
+
+                      <section class="social-wrap">
+                        <div class="social-btns-wrap">
+                          <a
+                            class="social-btn text-30 facebook ml-0"
+                            target="_blank"
+                            href="https://www.facebook.com/pagolinea.arg/?view_public_for=113671090077524"
+                            ><i class="eva eva-facebook"></i
+                          ></a>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of col -->
+              </div>
+            </div>
+          </section>
+          <!-- end footer -->
         </div>
-        <!--=============== End app-Landing-wrap ================-->
+        <!-- ============ Main content End ============= -->
+      </div>
+    </div>
+    <!--=============== End app-Landing-wrap ================-->
 
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/es5/scroll.min.js"></script>
+    <script src="assets/js/es5/slick.script.min.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="assets/js/es5/script.min.js"></script>
+    <script src="assets/js/timer.js"></script>
+    <script>
+      const listEl = document.getElementsByTagName(
+        "coingecko-coin-list-widget"
+      )[0];
+      listEl.setAttribute("width", window.innerWidth);
 
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-        <script src="assets/js/vendor/jquery-3.3.1.min.js">
-        
-        </script>
-        <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/vendor/perfect-scrollbar.min.js"></script>
-        <script src="assets/js/vendor/slick.min.js"></script>
-        <script src="assets/js/es5/scroll.min.js"></script>
-        <script src="assets/js/es5/slick.script.min.js"></script>
-        <script src="assets/js/vendor/aos.js"></script>
-        <script src="assets/js/es5/script.min.js"></script>
-        <script src="assets/js/timer.js"></script>
-        <script>
-            $('#success-send').hide();
-            $('#fail-send').hide();
-            $('#contactForm').on('submit', (e) => {
-                e.preventDefault();
-                $('#success-send').hide();
-                $('#fail-send').hide();
-                $.post('', $('#contactForm').serialize())
-                .done(() => {
-                    $('#success-send').show();
-                }).fail(() => {
-                    $('#fail-send').show();
-                });
-            })
-        </script>
-    </body>
-
+      $("#success-send").hide();
+      $("#fail-send").hide();
+      $("#contactForm").on("submit", (e) => {
+        e.preventDefault();
+        $("#success-send").hide();
+        $("#fail-send").hide();
+        $.post("", $("#contactForm").serialize())
+          .done(() => {
+            $("#success-send").show();
+          })
+          .fail(() => {
+            $("#fail-send").show();
+          });
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,33 @@
+.feature-item {
+    text-align: center;
+    @media (min-width: 500px) {
+        text-align: left;
+    }  
+}
+
+.intro-ten-Buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width: 500px) {
+        flex-direction: row;
+    }
+
+    a {
+        width: 100%;
+    }
+
+    .download-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.landing-img-1 {
+    max-width: 120%;
+    margin: -4rem 0 -2rem!important;
+    align-self: center;
+}

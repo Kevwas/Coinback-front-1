@@ -54,3 +54,9 @@
   [t-m-033] {
     margin: .333333rem !important;
   }
+
+  .download-container {
+    @media (max-width: 500px) {
+      margin-top: 2em;
+    }
+  }
