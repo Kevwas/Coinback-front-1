@@ -1,6 +1,3 @@
-
-const deadline = 'July 29 2020 23:59:59 GMT-0300';
-
 function getTimeRemaining(endtime){
   const total = Date.parse(endtime) - Date.parse(new Date());
   const seconds = Math.floor( (total/1000) % 60 );
@@ -17,22 +14,37 @@ function getTimeRemaining(endtime){
   };
 }
 
-// countdown
-let timer = setInterval(function() {
 
-    // get today's date
-    const remaining = getTimeRemaining(deadline);
+function showTime(){
+  const deadline = 'August 29 2020 23:59:59 GMT-0300';
+  const remaining = getTimeRemaining(deadline);
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  
+  remaining.hours = (remaining.hours < 10) ? "0" + remaining.hours : remaining.hours;
+  remaining.minutes = (remaining.minutes < 10) ? "0" + remaining.minutes :remaining.minutes;
+  remaining.seconds = (remaining.seconds < 10) ? "0" + remaining.seconds : remaining.seconds;
+  
+  var time = remaining.days + ":" + remaining.hours + ":" +  remaining.minutes + ":" + remaining.seconds;
+  
+    document.getElementById("clock").innerText = time;
+    document.getElementById("clock").textContent = time;
+  
+  
+  setTimeout(showTime, 1000);
+  
+}
 
-    // display
-    document.getElementById("timer").innerHTML =
-        "<div class=\"days\"> \
-      <div class=\"numbers\">" + remaining.days + "</div>días</div> \
-<div class=\"hours\"> \
-  <div class=\"numbers\">" + remaining.hours + "</div>horas</div> \
-<div class=\"minutes\"> \
-  <div class=\"numbers\">" + remaining.minutes + "</div>minutos</div> \
-<div class=\"seconds\"> \
-  <div class=\"numbers\">" + remaining.seconds + "</div>segundos</div> \
-</div>";
-
-}, 1000);
+  showTime()

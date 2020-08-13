@@ -2,7 +2,7 @@
 $sky-blue: rgb(115, 103, 240) !default;
 $blue: #21316E !default;
 $indigo: #6610f2 !default;
-$purple: #640387 !default;
+$purple: #3c2b55 !default;
 $purple-light: #7566b5 !default;
 $pink: #e83e8c !default;
 $red: #d22346 !default;
@@ -11,7 +11,11 @@ $yellow: #ffc107 !default;
 $green: #4caf50 !default;
 $teal: #20c997 !default;
 $cyan: #9c27b0 !default;
+$white: #ffffff !default;
+$black: #000000 !default;
 $solid-colors: (
+  "black": #000000,
+  "white": #ffffff,
   "sky-blue": rgb(115, 103, 240),
   "blue": #21316E,
   "brown": #4e3634,
@@ -23,7 +27,7 @@ $solid-colors: (
   "indigo-deep": #5252d4,
   "indigo-ocean": #8a2be2,
   "dark-purple": #322740,
-  "purple": #640387,
+  "purple": #3c2b55,
   "pink": #cb3066,
   "pink-light": #ff1493,
   "red": #f44336,

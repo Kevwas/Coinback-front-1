@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
 .container-timer {
+  padding-top: 60px;
+  font-family: Gothic;
   position: relative;
   margin: auto;
   overflow: hidden; }
@@ -7,13 +8,37 @@
     .container-timer {
       width: 650px; } }
 
-h1 {
-  font-family: "Lato", sans-serif;
+.launch {
+  font-family: Gothic;
   text-align: center;
-  font-size: 1em;
+  font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: #183059; }
+  color: #f6f4f3; }
+  @media (min-width: 500px) {
+    .launch {
+      font-size: 40px; } }
+
+.clock-info {
+  font-size: 25px;
+  font-family: Gothic;
+  line-height: 30px; }
+
+.clock {
+  letter-spacing: 1px;
+  position: relative;
+  top: -18px;
+  height: 50px;
+  font-size: 80px; }
+
+.clock-footer {
+  top: 20px;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  font-size: 22px;
+  font-family: Gothic;
+  font-style: oblique; }
 
 .social-vert {
   display: none;
@@ -27,7 +52,7 @@ h1 {
   left: 2%;
   top: 40%;
   border-radius: 10px;
-  border: 1px solid #F6F4F3;
+  border: 1px solid #f6f4f3;
   background-color: #640387;
   z-index: 100; }
   @media (min-width: 500px) {
@@ -36,55 +61,58 @@ h1 {
       width: 30px; } }
 
 #timer {
-  color: #183059;
+  color: #f6f4f3;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  font-size: .5em;
+  font-family: Gothic;
+  font-size: 0.5em;
   letter-spacing: 0px;
   margin-top: 10%; }
   @media (min-width: 500px) {
     #timer {
-      font-size: .7em;
-      letter-spacing: 5px; } }
+      font-size: 0.7em; } }
 
-.days, .hours, .minutes, .seconds {
-  margin-left: 2px;
-  margin-right: 2px;
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-family: Gothic;
   display: inline-block;
-  padding: 15px;
-  width: 75px;
   border-radius: 5px; }
   @media (min-width: 500px) {
-    .days, .hours, .minutes, .seconds {
-      width: 125px;
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
       margin-left: 0;
-      margin-right: 0;
-      padding: 20px; } }
-
-.days {
-  background: #F6F4F3; }
-
-.hours {
-  background: #F6F4F3;
-  color: #183059; }
-
-.minutes {
-  background: #F6F4F3; }
-
-.seconds {
-  background: #F6F4F3; }
+      margin-right: 0; } }
 
 .numbers {
   font-family: "Montserrat", sans-serif;
-  color: #183059;
+  color: #f6f4f3;
   font-size: 4em; }
+
+.days .numbers::after,
+.hours .numbers::after,
+.minutes .numbers::after,
+.seconds .numbers::after {
+  content: ": "; }
+
+@media (min-width: 500px) {
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    margin-left: 0;
+    margin-right: 0; } }
+
+.seconds .numbers::after {
+  content: "" !important; }
 
 .white {
   position: absolute;
-  background: #F6F4F3;
+  background: #f6f4f3;
   height: 85px;
-  width: 75px;
   left: 30%;
   top: 2%; }
   .white .triangle {
@@ -95,29 +123,27 @@ h1 {
 
 .red {
   position: absolute;
-  background: #EF2F3C;
+  background: #ef2f3c;
   left: 18%;
   top: 9%;
-  height: 65px;
-  width: 70px; }
+  height: 65px; }
   .red .triangle {
-    border-bottom: 14px solid #EF2F3C; }
+    border-bottom: 14px solid #ef2f3c; }
   .red .string {
-    background: #EF2F3C;
-    border: 1px solid #EF2F3C; }
+    background: #ef2f3c;
+    border: 1px solid #ef2f3c; }
 
 .blue {
   position: absolute;
-  background: #276FBF;
+  background: #276fbf;
   height: 80px;
-  width: 80px;
   left: 50%;
   top: 5%; }
   .blue .triangle {
-    border-bottom: 14px solid #276FBF; }
+    border-bottom: 14px solid #276fbf; }
   .blue .string {
-    background: #276FBF;
-    border: 1px solid #276FBF; }
+    background: #276fbf;
+    border: 1px solid #276fbf; }
 
 .balloon {
   border: 1px solid #000;
@@ -129,14 +155,13 @@ h1 {
 
 .eye {
   position: absolute;
-  width: 7px;
   height: 7px;
   top: 40%;
   left: 22%;
   background: #000;
   border-radius: 50%; }
   .eye:after {
-    content: '';
+    content: "";
     left: 35px;
     width: 7px;
     height: 7px;
@@ -177,7 +202,7 @@ h1 {
 .star {
   width: 20px;
   height: 20px;
-  background: #F6F4F3;
+  background: #f6f4f3;
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
 
@@ -186,6 +211,6 @@ h1 {
   height: 30px;
   margin-left: 51px;
   margin-top: -5px;
-  background: #EF2F3C;
+  background: #ef2f3c;
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }

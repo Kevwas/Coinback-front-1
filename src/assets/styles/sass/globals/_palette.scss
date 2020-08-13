@@ -52,11 +52,18 @@
     }
   }
 }
+.button-custom {
+  background-color: white;
+  color: $purple;
+}
 
 @each $color_name, $color in $solid-colors {
   .landing-#{$color_name} {
     .header-fixed {
       background: $color !important;
+    }
+    .btn-#{$color_name} {
+      background-color: $color !important;
     }
     .overlay {
       background: $color;

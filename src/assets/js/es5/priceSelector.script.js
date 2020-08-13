@@ -23,7 +23,7 @@ var PriceSelector = function (_HTMLElement) {
     key: "connectedCallback",
     value: function connectedCallback() {
       console.log(this.getAttributeNames());
-      this.innerHTML = "\n        <style>\n        .selector-wrap {\n            display: flex;\n            font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;\n        }\n        .icon-container {\n            color: " + (this.getAttribute("icon-color") ? this.getAttribute("icon-color") : "black") + ";\n            font-size: " + (this.getAttribute("font-size") ? this.getAttribute("font-size") : "15px") + ";\n            width: 25px;\n        }\n\n        .price-container {\n            color: " + (this.getAttribute("color") ? this.getAttribute("color") : "black") + ";\n            font-size: " + (this.getAttribute("font-size") ? this.getAttribute("font-size") : "15px") + ";\n        }\n        </style>\n        <div class=\"selector-wrap d-flex align-items-center justify-content-left\">\n            <div class=\"icon-container\">\n                <ion-icon name=\"caret-down-outline\"></ion-icon>\n            </div>\n            <div id=\"price-container\" class=\"price-container\">\n                BTC/USD 10000\n            </div>\n        </div>";
+      this.innerHTML = "\n        <style>\n\n        \n        .selector-wrap {\n            display: flex;\n            font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;\n        }\n        .icon-container {\n            color: " + (this.getAttribute("icon-color") ? this.getAttribute("icon-color") : "black") + ";\n            font-size: " + (this.getAttribute("font-size") ? this.getAttribute("font-size") : "15px") + ";\n            width: 25px;\n        }\n\n        .price-container {\n            color: " + (this.getAttribute("color") ? this.getAttribute("color") : "black") + ";\n            font-size: " + (this.getAttribute("font-size") ? this.getAttribute("font-size") : "15px") + ";\n        }\n\n        @media (max-width: 500px) {\n          .icon-container { \n            font-size: 14px;\n          }\n\n          .price-container { \n            font-size: 14px;\n          }\n\n        }\n        </style>\n        <div class=\"selector-wrap d-flex align-items-center justify-content-left\">\n            <div class=\"icon-container\">\n                <ion-icon name=\"caret-down-outline\"></ion-icon>\n            </div>\n            <div id=\"price-container\" class=\"price-container\">\n                BTC/USD 10000\n            </div>\n        </div>";
       this.fetchPrice();
     }
   }, {
@@ -49,7 +49,7 @@ var PriceSelector = function (_HTMLElement) {
                 });
 
               case 5:
-                document.getElementById('price-container').innerHTML = coinData.symbol.toUpperCase() + "/" + defaultCurrency.toUpperCase() + " " + coinData.market_data.current_price[defaultCurrency];
+                document.getElementById("price-container").innerHTML = coinData.symbol.toUpperCase() + "/" + defaultCurrency.toUpperCase() + " " + coinData.market_data.current_price[defaultCurrency];
 
               case 6:
               case "end":

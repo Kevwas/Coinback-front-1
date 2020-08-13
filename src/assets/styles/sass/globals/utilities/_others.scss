@@ -14,3 +14,15 @@
 .progress--height-2{
     height:5px;
 }
+
+.whatsapp-logo {
+    height: 70px;
+    width: 70px;
+    z-index: 100;
+}
+
+.floating {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}

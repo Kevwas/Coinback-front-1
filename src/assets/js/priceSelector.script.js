@@ -3,6 +3,8 @@ class PriceSelector extends HTMLElement {
     console.log(this.getAttributeNames());
     this.innerHTML = `
         <style>
+
+        
         .selector-wrap {
             display: flex;
             font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
@@ -31,6 +33,17 @@ class PriceSelector extends HTMLElement {
                 : "15px"
             };
         }
+
+        @media (max-width: 500px) {
+          .icon-container { 
+            font-size: 14px;
+          }
+
+          .price-container { 
+            font-size: 14px;
+          }
+
+        }
         </style>
         <div class="selector-wrap d-flex align-items-center justify-content-left">
             <div class="icon-container">
@@ -56,8 +69,12 @@ class PriceSelector extends HTMLElement {
     let coinData = null;
     await fetch("https://api.coingecko.com/api/v3/coins/" + defaultCoin)
       .then((res) => res.json())
-      .then((data) => coinData = data);
-    document.getElementById('price-container').innerHTML = `${coinData.symbol.toUpperCase()}/${defaultCurrency.toUpperCase()} ${coinData.market_data.current_price[defaultCurrency]}`;
+      .then((data) => (coinData = data));
+    document.getElementById(
+      "price-container"
+    ).innerHTML = `${coinData.symbol.toUpperCase()}/${defaultCurrency.toUpperCase()} ${
+      coinData.market_data.current_price[defaultCurrency]
+    }`;
   }
 }
 

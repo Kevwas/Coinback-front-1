@@ -31,3 +31,14 @@
 .cg-container {
     width: 100vw!important;
 }
+
+#adv-chart-wrap {
+    height: 500px;
+    .container, .row, .col-12 {
+        height: 100%;
+    }
+
+    @media (min-width: 500px) {
+        height: 800px; 
+    }
+}

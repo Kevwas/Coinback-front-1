@@ -62,6 +62,15 @@ $(document).ready(function() {
 
     });
 
+    $('.coinbacks-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.coinbacks-arrow-left'),
+        nextArrow: $('.coinbacks-arrow-right'),
+    });
+
     // slick Services carousel
     $('.slick-services-carousel-wrap').slick({
         slidesToShow: 4,

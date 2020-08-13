@@ -14,9 +14,11 @@
     @media (min-width: 500px) {
         flex-direction: row;
     }
-
     a {
-        width: 100%;
+        width: 75%;
+        @media (min-width: 1000px) {
+            width: 40%;
+        }
     }
 
     .download-container {
@@ -30,4 +32,22 @@
     max-width: 120%;
     margin: -4rem 0 -2rem!important;
     align-self: center;
+}
+
+.cb-title {
+    height: 60px;
+    width: 60px;
+    @media (min-width: 500px) {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.cb-title-main {
+    height: 100px;
+    width: 100px;
+    @media (min-width: 500px) {
+        height: 150px;
+        width: 150px;
+    }
 }
