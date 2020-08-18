@@ -1,0 +1,1 @@
+$(document).ready(function(){$tabCard=$(".feature-card"),$tabCard.on("click",function(){$this=$(this);let t=$this.data("tab");$tabCard.removeClass("active"),$this.addClass("active"),$(".tab-panel").hide(),$("#"+t).show()}),$("#view_demo").click(function(t){t.preventDefault(),$("html, body").animate({scrollTop:$("#demo").offset().top},400)})});
