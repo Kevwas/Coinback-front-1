@@ -41,7 +41,7 @@ function getTimeRemaining(endtime){
 
 
 function showTime(){
-  const deadline = 'July 29 2020 23:59:59 GMT-0300';
+  const deadline = 'October 1 2020 00:00:00 GMT-0300';
   const remaining = getTimeRemaining(deadline);
   var date = new Date();
   var h = date.getHours(); // 0 - 23
